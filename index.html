@@ -6,7 +6,37 @@
 		<meta name="description" content="Voloskov Miloslav &ndash; personal page">
 		<style>
 			body {
+				padding: 0;
+				margin: 0;
+			}
+			header {
+				position: relative;
+
+				display: block;
+				margin: 0;
+				padding-top: 170px;
+				padding-bottom: 40px;
+
+				color: white;
+				font-family: sans-serif;
+				font-size: 5vh;
+				text-align: center;
+				text-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+				
+				background: #00C9FF;
+				background: linear-gradient(to left, #00C9FF , #92FE9D);
+			}
+			header:hover ~ main {
+				top: 0;
+			}
+			main {
+				position: relative;
+				top: -230px;
+				display: block;
 				padding: 5% 20%;
+				box-shadow: 0 -5px 5px rgba(0, 0, 0, .1);
+				background-color: white;
+				transition: top .3s;
 			}
 			p {
 				font-family: sans-serif;
@@ -15,14 +45,19 @@
 		</style>
 	</head>
 	<body>
-		<p>
-			Привет.
-		</p>
-		<p>
-			Я занимаюсь фронтендом.
-		</p>
-		<p>
-			<a href="https://vk.com/eyefronter">Напишите мне</a>
-		</p>
+		<header>
+			Ого! Даже так!
+		</header>
+		<main>
+			<p>
+				Привет.
+			</p>
+			<p>
+				Я занимаюсь фронтендом.
+			</p>
+			<p>
+				<a href="https://vk.com/eyefronter">Напишите мне</a>
+			</p>
+		</main>
 	</body>
 </html>
