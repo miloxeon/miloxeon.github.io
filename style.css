@@ -24,13 +24,13 @@ p {
 	margin-left: 10%;
 	margin-right: 10%;
 	font-family: 'Poiret One', 'Arial', sans-serif;
-	font-size: 5vh;
+	font-size: 30px;
 	color: white;
 }
 
 a {
 	font-family: 'Poiret One', 'Arial', sans-serif;
-	font-size: 5vh;
+	font-size: 30px;
 	color: white;
 	transition: all .4s;
 }
@@ -78,7 +78,7 @@ a:active {
 	left: 50%;
 	display: inline-block;
 	content: " ";
-	width: 10vh;
+	width: 10px;
 	transform-origin: center bottom;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
