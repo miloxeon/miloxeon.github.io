@@ -23,13 +23,13 @@ body {
 p {
 	margin-left: 10%;
 	margin-right: 10%;
-	font-family: 'Poiret One', sans-serif;
+	font-family: 'Poiret One', 'Arial', sans-serif;
 	font-size: 5vh;
 	color: white;
 }
 
 a {
-	font-family: 'Poiret One', sans-serif;
+	font-family: 'Poiret One', 'Arial', sans-serif;
 	font-size: 5vh;
 	color: white;
 	transition: all .4s;
@@ -48,6 +48,7 @@ a:active {
 }
 
 .sky {
+	/* container */
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -60,6 +61,7 @@ a:active {
 }
 
 .sky > .background {
+	/* background */
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -70,6 +72,7 @@ a:active {
 }
 
 .sky > i {
+	/* star axis needed to rotate*/
 	position: absolute;
 	bottom: 50%;
 	left: 50%;
@@ -81,21 +84,14 @@ a:active {
 	animation-timing-function: linear;
 }
 
-.sky > i > i::before {
-	display: inline-block;
-	content: " ";
-	background-color: gainsboro;
-	width: 10px;
-	height: 1px;
-	transform: translate(-10px, -12px);
-	transform-origin: right center;
-	filter: blur(1px);
-}
-
 .sky > i > i {
+	/* star itself */
 	display: inline-block;
 	width: 3px;
 	height: 3px;
 	background-color: white;
 	border-radius: 50%;
+	box-shadow: 
+		0 100px 1px white,
+		100px 0 1px white;
 }
