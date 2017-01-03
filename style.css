@@ -21,8 +21,8 @@ body {
 }
 
 p {
-	padding-left: 10%;
-	padding-right: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
 	font-family: 'Poiret One', sans-serif;
 	font-size: 5vh;
 	color: white;
