@@ -35,13 +35,13 @@ body {
 p {
 	margin-left: 10%;
 	margin-right: 10%;
-	font-family: 'Poiret One', 'Arial', sans-serif;
+	font-family: 'Poiret One', 'Arial', sans-serif !important;
 	font-size: 30px;
 	color: white;
 }
 
 a {
-	font-family: 'Poiret One', 'Arial', sans-serif;
+	font-family: 'Poiret One', 'Arial', sans-serif !important;
 	font-size: 30px;
 	color: white;
 	transition: all .4s;
