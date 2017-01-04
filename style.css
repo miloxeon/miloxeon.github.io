@@ -104,7 +104,7 @@ a:active {
 	background-color: white;
 	border-radius: 50%;
 	box-shadow: 
-		0 100px 1px white,
+		0 100px 4px white,
 		100px 0 1px white,
 		100px 200px 1px white;
 }
