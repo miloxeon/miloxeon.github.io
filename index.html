@@ -25,30 +25,8 @@
 	</head>
 	<body>
 		<div class="sky">
-			<div class="background"></div>
-			<div class="aurora">
-				<i></i>
-			</div>
-			<script>
-				function randInt(min, max) {
-					return Math.floor(Math.random() * (max - min)) + min;
-				}
-				document.querySelector('.sky').innerHTML += function() {
-					result = '';
-					for ( i = 0; i < 50; i++ ) {
-						result += '<i style="height: ' + 
-						randInt(150, 800) + 
-						'px; width: ' + 
-						randInt(90, 500) +
-						'px; animation-name: star-' + 
-						randInt(1, 4) + 
-						'; animation-duration: ' + 
-						randInt(5, 30) + 
-						's;"><i></i></i>\n';
-					}
-					return result;
-				}();
-			</script>
+			<div class="aurora"><i></i></div>
+			<!-- JS adds stars here -->
 		</div>
 		<p>Привет.</p>
 		<p>Я занимаюсь фронтендом.</p>
@@ -59,7 +37,9 @@
 			<a href="mailto:hello@miloslav.website">Почта</a>
 		</p>
 		<p>
-			<a href="https://vk.com/eyefronter">Напишите мне</a>
+			<a href="https://vk.com/eyefronter">Напишите&nbsp;мне</a>
 		</p>
+		<script type="text/javascript" src="js/stars.js"></script>
 	</body>
+
 </html>
