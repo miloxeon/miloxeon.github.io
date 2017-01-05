@@ -4,7 +4,7 @@ function randInt(min, max) {
 	return Math.floor(Math.random() * (max - min)) + min;
 }
 
-document.querySelector('.sky').innerHTML += function() {
+document.querySelector('.stars').innerHTML += function() {
 	var result = '';
 	for ( var i = 0; i < 50; i++ ) {
 		result += '<i style="height: ' + 
