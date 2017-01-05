@@ -201,8 +201,8 @@ a:active {
 	-webkit-transform-origin: -1000% 1000%;
 
 	        transform-origin: -1000% 1000%;
-	-webkit-animation: 300s moon infinite linear;
-	        animation: 300s moon infinite linear;
+	-webkit-animation: 600s moon infinite linear;
+	        animation: 600s moon infinite linear;
 }
 
 .moon > i {
