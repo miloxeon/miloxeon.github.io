@@ -14,7 +14,7 @@ document.querySelector('.stars').innerHTML += function() {
 		'px; animation-name: star-' + 
 		randInt(1, 4) + 
 		'; animation-duration: ' + 
-		randInt(5, 30) + 
+		randInt(15, 90) + 
 		's;"><i></i></i>\n';
 	}
 	return result;

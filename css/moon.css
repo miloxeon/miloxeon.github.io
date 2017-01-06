@@ -1,0 +1,44 @@
+@-webkit-keyframes moon {
+	0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@keyframes moon {
+	0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+.moon {
+	position: fixed;
+	top: 20%;
+	right: 20%;
+	width: 5vh;
+	height: 5vh;    
+	z-index: -2;
+	overflow: hidden;
+
+	background-color: #d5d3de;
+	border: -1px solid transparent;
+	border-radius: 100%;
+	box-shadow: 2px 2px 1px rgba(0, 8, 90, .3), 1px 1px 10px #a5a3ae;
+
+	-webkit-transform-origin: -1000% 1000%;
+
+			transform-origin: -1000% 1000%;
+	-webkit-animation: 1800s moon infinite linear;
+			animation: 1800s moon infinite linear;
+}
+
+.moon > i {
+	position: absolute;
+	top: -20%;
+	left: -20%;
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	background-color: #a5a3ae;
+	opacity: .5;
+	border-radius: 50%;
+	-webkit-filter: blur(3px);
+			filter: blur(3px);
+}

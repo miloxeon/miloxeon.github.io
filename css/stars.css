@@ -1,0 +1,71 @@
+@-webkit-keyframes star-1 {
+	0% { -webkit-transform: rotate(120deg); transform: rotate(120deg); }
+	100% { -webkit-transform: rotate(480deg); transform: rotate(480deg); }
+}
+
+@keyframes star-1 {
+	0% { -webkit-transform: rotate(120deg); transform: rotate(120deg); }
+	100% { -webkit-transform: rotate(480deg); transform: rotate(480deg); }
+}
+
+@-webkit-keyframes star-2 {
+	0% { -webkit-transform: rotate(40deg); transform: rotate(40deg); }
+	100% { -webkit-transform: rotate(400deg); transform: rotate(400deg); }
+}
+
+@keyframes star-2 {
+	0% { -webkit-transform: rotate(40deg); transform: rotate(40deg); }
+	100% { -webkit-transform: rotate(400deg); transform: rotate(400deg); }
+}
+
+@-webkit-keyframes star-3 {
+	0% { -webkit-transform: rotate(270deg); transform: rotate(270deg); }
+	100% { -webkit-transform: rotate(630deg); transform: rotate(630deg); }
+}
+
+@keyframes star-3 {
+	0% { -webkit-transform: rotate(270deg); transform: rotate(270deg); }
+	100% { -webkit-transform: rotate(630deg); transform: rotate(630deg); }
+}
+
+.stars {
+	/* container */
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	min-height: 100%;
+	width: 100%;
+	overflow: hidden;
+	z-index: -2;
+}
+
+.stars > i {
+	/* star axis needed to rotate*/
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	display: inline-block;
+	content: " ";
+	width: 10px;
+	-webkit-transform-origin: center bottom;
+			transform-origin: center bottom;
+	-webkit-animation-iteration-count: infinite;
+			animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+			animation-timing-function: linear;
+}
+
+.stars > i > i {
+	/* star itself */
+	display: inline-block;
+	width: 3px;
+	height: 3px;
+	background-color: white;
+	border-radius: 50%;
+	box-shadow: 
+		0 100px 4px white,
+		100px 0 1px white,
+		100px 200px 1px white;
+}
