@@ -16,3 +16,6 @@ Feel free to text me something!
 ## License
 The code is under MIT license.
 You cannot use the content and design without my permission.
+
+## Mentions
+This project and it's design was inspired and punctiliously curated by [@schatty](https://github.com/schatty).
