@@ -18,14 +18,14 @@ p {
 }
 
 a {
-	display: inline-block;
-	line-height: 1;
 	color: white;
 	font-size: 30px;
 	font-family: 'Poiret One', 'Arial', sans-serif !important;
 	text-decoration: none;
 	cursor: pointer;
 	border-bottom: 1px solid rgba(255, 255, 255, .4);
+	-webkit-box-decoration-break: clone;
+			box-decoration-break: clone;
 	-webkit-transition: all .2s;
 			transition: all .2s;
 }
