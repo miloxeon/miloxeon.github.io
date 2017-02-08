@@ -1,10 +1,6 @@
 html {
 	min-height: 100%;
 	background: #4b79a1;
-	background: -webkit-linear-gradient(to top, #4b79a1, #283e51);
-	background: -webkit-linear-gradient(bottom, #4b79a1, #283e51);
-	background: linear-gradient(to top, #4b79a1, #283e51);
-	background: -webkit-linear-gradient(bottom, #0b3961, #000011);
 	background: linear-gradient(to top, #0b3961, #000011);
 }
 
@@ -16,22 +12,22 @@ body {
 p {
 	margin-left: 10%;
 	margin-right: 10%;
+	color: white;
 	font-family: 'Poiret One', 'Arial', sans-serif !important;
 	font-size: 30px;
-	color: white;
 }
 
 a {
 	display: inline-block;
 	line-height: 1;
-	font-family: 'Poiret One', 'Arial', sans-serif !important;
-	font-size: 30px;
-	text-decoration: none;
 	color: white;
+	font-size: 30px;
+	font-family: 'Poiret One', 'Arial', sans-serif !important;
+	text-decoration: none;
 	cursor: pointer;
 	border-bottom: 1px solid rgba(255, 255, 255, .4);
 	-webkit-transition: all .2s;
-	transition: all .2s;
+			transition: all .2s;
 }
 
 a:link {
@@ -39,8 +35,8 @@ a:link {
 }
 
 a:hover {
-	text-shadow: 0 0 3px yellow;
 	border-bottom: 1px solid white;
+	text-shadow: 0 0 3px yellow;
 }
 
 a:active {
