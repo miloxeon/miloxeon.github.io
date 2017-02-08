@@ -12,9 +12,9 @@
 	position: fixed;
 	top: 20%;
 	right: 20%;
+	z-index: -2;
 	width: 5vh;
 	height: 5vh;    
-	z-index: -2;
 	overflow: hidden;
 
 	background-color: #d5d3de;
@@ -34,11 +34,11 @@
 	top: -20%;
 	left: -20%;
 	display: inline-block;
-	height: 100%;
 	width: 100%;
+	height: 100%;
 	background-color: #a5a3ae;
-	opacity: .5;
 	border-radius: 50%;
 	-webkit-filter: blur(3px);
 			filter: blur(3px);
+	opacity: .5;
 }
