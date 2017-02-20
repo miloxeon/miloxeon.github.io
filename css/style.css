@@ -13,14 +13,28 @@ p {
 	margin-left: 10%;
 	margin-right: 10%;
 	color: white;
-	font-family: 'Poiret One', 'Arial', sans-serif !important;
+	font-family: 'Poiret One', 'Arial', sans-serif;
 	font-size: 30px;
+}
+
+ul {
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 0;
+	color: white;
+	font-family: 'Poiret One', 'Arial', sans-serif;
+	line-height: 1.5;
+	list-style-type: none;
+}
+
+li > a {
+	font-size: 25px;
 }
 
 a {
 	color: white;
 	font-size: 30px;
-	font-family: 'Poiret One', 'Arial', sans-serif !important;
+	font-family: 'Poiret One', 'Arial', sans-serif;
 	text-decoration: none;
 	cursor: pointer;
 	border-bottom: 1px solid rgba(255, 255, 255, .4);
