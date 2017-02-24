@@ -17,8 +17,8 @@
 	height: 5vh;    
 	overflow: hidden;
 
-	background-color: #d5d3de;
-	border: -1px solid transparent;
+	background-color: white;
+	border: 1px solid transparent;
 	border-radius: 100%;
 	box-shadow: 2px 2px 1px rgba(0, 8, 90, .3), 1px 1px 10px #a5a3ae;
 
@@ -27,18 +27,4 @@
 			transform-origin: -1000% 1000%;
 	-webkit-animation: 1800s moon infinite linear;
 			animation: 1800s moon infinite linear;
-}
-
-.moon > i {
-	position: absolute;
-	top: -20%;
-	left: -20%;
-	display: inline-block;
-	width: 100%;
-	height: 100%;
-	background-color: #a5a3ae;
-	border-radius: 50%;
-	-webkit-filter: blur(3px);
-			filter: blur(3px);
-	opacity: .5;
 }
