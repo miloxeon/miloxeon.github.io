@@ -2,20 +2,10 @@
 Personal web portfolio &amp; contacts page.
 Visit http://miloslav.website/
 
-### Stay in touch
-[vk.com/eyefronter](https://vk.com/eyefronter) – VK<br />
-[@uyouthe](https://twitter.com/uyouthe) – Twitter<br />
-[@uyouthe](https://medium.com/@uyouthe) – Medium<br />
-[@uyouthe](https://telegram.me/uyouthe) – Telegram<br />
-[uyouthe](https://www.facebook.com/uyouthe) – Facebook<br />
-[uyouthe](https://www.behance.net/uyouthe) – Behance<br />
-[hello@miloslav.website](mailto:hello@miloslav.website) – email<br />
-
-Feel free to text me something!
+## Mentions
+This project and it's design was inspired and punctiliously curated by [@schatty](https://github.com/schatty).
+I'm glad to thank [@pepelsbey](https://github.com/pepelsbey) for helping me with complicated web standards rules.
 
 ## License
 The code is under MIT license.
-You cannot use the content and design without my permission.
-
-## Mentions
-This project and it's design was inspired and punctiliously curated by [@schatty](https://github.com/schatty).
+You cannot use the content and design without permission.
