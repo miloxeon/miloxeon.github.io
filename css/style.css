@@ -37,9 +37,11 @@ a {
 	font-family: 'Poiret One', 'Arial', sans-serif;
 	text-decoration: none;
 	cursor: pointer;
-	border-bottom: 1px solid rgba(255, 255, 255, .4);
-	-webkit-box-decoration-break: clone;
-			box-decoration-break: clone;
+	
+	background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="1" height="1"%3E%3Crect x="0" y="0.5" width="1" height="0.5" fill="rgba(255, 255, 255, 0.5)"/%3E%3C/svg%3E');
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	
 	-webkit-transition: all .2s;
 			transition: all .2s;
 }
@@ -49,8 +51,14 @@ a:link {
 }
 
 a:hover {
-	border-bottom: 1px solid white;
-	text-shadow: 0 0 3px yellow;
+	color: #ffff97;
+}
+
+@supports (filter: drop-shadow(0 0 .8px yellow)) {
+	a:hover {
+		color: white;
+		filter: drop-shadow(0 0 .8px yellow);
+	}
 }
 
 a:active {
