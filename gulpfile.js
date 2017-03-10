@@ -3,12 +3,20 @@ var gulp = require('gulp'),
 	autoprefixer = require('gulp-autoprefixer'),
 	cleanCSS = require('gulp-clean-css'),
 	htmlmin = require('gulp-htmlmin'),
+	clean = require('gulp-clean'),
 	inlineSource = require('gulp-inline-source'),
-	runSequence = require('run-sequence');
+	gulpSequence = require('gulp-sequence');
 
+
+gulp.task('clean', function () {
+	return gulp.src('src/css/bundle.css', {
+		read: false
+	})
+	.pipe(clean());
+});
 
 gulp.task('css', function () {
-	gulp.src('src/css/*.css')
+	return gulp.src('src/css/*.css')
 		.pipe(concat('bundle.css'))
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions']
@@ -18,7 +26,7 @@ gulp.task('css', function () {
 });
 
 gulp.task('html', function () {
-	gulp.src('src/*.html')
+	return gulp.src('src/*.html')
 		.pipe(htmlmin({
 			collapseWhitespace: true,
 			removeComments: true
@@ -27,9 +35,8 @@ gulp.task('html', function () {
 		.pipe(gulp.dest('./'));
 });
 
-gulp.task('default', function () {
-	runSequence(
-		'css',
-		'html'
-	);
-});
+gulp.task('default', gulpSequence(
+	'clean',
+	'css',
+	'html'
+));
