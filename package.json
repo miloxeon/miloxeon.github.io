@@ -4,7 +4,7 @@
   "description": "Personal web portfolio & contacts page of Miloslav Voloskov",
   "main": "index.html",
   "scripts": {
-    "start": "gulp",
+    "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
