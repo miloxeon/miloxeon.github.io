@@ -2,7 +2,6 @@ var gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	autoprefixer = require('gulp-autoprefixer'),
 	cleanCSS = require('gulp-clean-css'),
-	uglify = require('gulp-uglify'),
 	htmlmin = require('gulp-htmlmin'),
 	inlineSource = require('gulp-inline-source'),
 	runSequence = require('run-sequence');
@@ -18,13 +17,6 @@ gulp.task('css', function () {
 		.pipe(gulp.dest('src/css/'))
 });
 
-gulp.task('js', function () {
-	gulp.src('src/js/*.js')
-		.pipe(concat('bundle.js'))
-		.pipe(uglify())
-		.pipe(gulp.dest('src/js/'))
-});
-
 gulp.task('html', function () {
 	gulp.src('src/*.html')
 		.pipe(htmlmin({
@@ -37,7 +29,7 @@ gulp.task('html', function () {
 
 gulp.task('default', function () {
 	runSequence(
-		['css', 'js'],
+		'css',
 		'html'
 	);
 });
