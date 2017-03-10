@@ -4,7 +4,8 @@ var gulp = require('gulp'),
 	cleanCSS = require('gulp-clean-css'),
 	uglify = require('gulp-uglify'),
 	htmlmin = require('gulp-htmlmin'),
-	inlineSource = require('gulp-inline-source');
+	inlineSource = require('gulp-inline-source'),
+	runSequence = require('run-sequence');
 
 
 gulp.task('css', function () {
@@ -34,4 +35,9 @@ gulp.task('html', function () {
 		.pipe(gulp.dest('./'));
 });
 
-gulp.task('default', ['css', 'js', 'html']);
+gulp.task('default', function () {
+	runSequence(
+		['css', 'js'],
+		'html'
+	);
+});
