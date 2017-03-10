@@ -1,31 +1,16 @@
-@-webkit-keyframes star-1 {
-	0% { -webkit-transform: rotate(120deg); transform: rotate(120deg); }
-	100% { -webkit-transform: rotate(480deg); transform: rotate(480deg); }
-}
-
 @keyframes star-1 {
-	0% { -webkit-transform: rotate(120deg); transform: rotate(120deg); }
-	100% { -webkit-transform: rotate(480deg); transform: rotate(480deg); }
-}
-
-@-webkit-keyframes star-2 {
-	0% { -webkit-transform: rotate(40deg); transform: rotate(40deg); }
-	100% { -webkit-transform: rotate(400deg); transform: rotate(400deg); }
+	0% { transform: rotate(120deg); }
+	100% { transform: rotate(480deg); }
 }
 
 @keyframes star-2 {
-	0% { -webkit-transform: rotate(40deg); transform: rotate(40deg); }
-	100% { -webkit-transform: rotate(400deg); transform: rotate(400deg); }
-}
-
-@-webkit-keyframes star-3 {
-	0% { -webkit-transform: rotate(270deg); transform: rotate(270deg); }
-	100% { -webkit-transform: rotate(630deg); transform: rotate(630deg); }
+	0% { transform: rotate(40deg); }
+	100% { transform: rotate(400deg); }
 }
 
 @keyframes star-3 {
-	0% { -webkit-transform: rotate(270deg); transform: rotate(270deg); }
-	100% { -webkit-transform: rotate(630deg); transform: rotate(630deg); }
+	0% { transform: rotate(270deg); }
+	100% { transform: rotate(630deg); }
 }
 
 .stars {
@@ -49,12 +34,9 @@
 	left: 50%;
 	display: inline-block;
 	width: 10px;
-	-webkit-transform-origin: center bottom;
-			transform-origin: center bottom;
-	-webkit-animation-iteration-count: infinite;
-			animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-			animation-timing-function: linear;
+	transform-origin: center bottom;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 
 .stars > i > i {
