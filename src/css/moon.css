@@ -1,11 +1,11 @@
-@-webkit-keyframes moon {
-	0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
-	100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
-}
-
 @keyframes moon {
-	0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
-	100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+	0% {
+		transform: rotate(0deg);
+	}
+	
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 .moon {
@@ -13,18 +13,16 @@
 	top: 20%;
 	right: 20%;
 	z-index: -2;
-	width: 5vh;
-	height: 5vh;    
+	width: 50px;
+	height: 50px;    
 	overflow: hidden;
 
 	background-color: white;
 	border: 1px solid transparent;
 	border-radius: 100%;
-	box-shadow: 2px 2px 1px rgba(0, 8, 90, .3), 1px 1px 10px #a5a3ae;
-
-	-webkit-transform-origin: -1000% 1000%;
-
-			transform-origin: -1000% 1000%;
-	-webkit-animation: 1800s moon infinite linear;
-			animation: 1800s moon infinite linear;
+	box-shadow:
+		2px 2px 1px rgba(0, 8, 90, .3),
+		1px 1px 10px #a5a3ae;
+	transform-origin: -1000% 1000%;
+	animation: 1800s moon infinite linear;
 }

@@ -26,7 +26,7 @@ gulp.task('js', function () {
 });
 
 gulp.task('html', function () {
-	gulp.src('src/index.html')
+	gulp.src('src/*.html')
 		.pipe(htmlmin({
 			collapseWhitespace: true,
 			removeComments: true
