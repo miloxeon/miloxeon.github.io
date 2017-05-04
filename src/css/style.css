@@ -52,8 +52,18 @@ a:hover {
 	color: #ffff97;
 }
 
+a:focus {
+	outline: none;
+	color: #ffff97;
+}
+
 @supports (filter: drop-shadow(0 0 .8px yellow)) {
 	a:hover {
+		color: white;
+		filter: drop-shadow(0 0 .8px yellow);
+	}
+
+	a:focus {
 		color: white;
 		filter: drop-shadow(0 0 .8px yellow);
 	}
@@ -91,7 +101,7 @@ button:focus {
 		border-color: white;
 		filter: drop-shadow(0 0 .8px yellow);
 	}
-	
+
 	button:focus {
 		color: white;
 		border-color: white;
