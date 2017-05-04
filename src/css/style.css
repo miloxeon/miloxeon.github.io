@@ -79,17 +79,24 @@ button:hover {
 	border-color: #ffff97;
 }
 
-@supports (filter: drop-shadow(0 0 .8px yellow)) {
-	button:hover {
-		color: #ffff97;
-		border-color: #ffff97;
-		filter: drop-shadow(0 0 .8px yellow);
-	}
-}
-
 button:focus {
 	outline: none;
-	filter: drop-shadow(0 0 .8px #1454f4);
+	color: #ffff97;
+	border-color: #ffff97;
+}
+
+@supports (filter: drop-shadow(0 0 .8px yellow)) {
+	button:hover {
+		color: white;
+		border-color: white;
+		filter: drop-shadow(0 0 .8px yellow);
+	}
+	
+	button:focus {
+		color: white;
+		border-color: white;
+		filter: drop-shadow(0 0 .8px #ffff97);
+	}
 }
 
 ::selection {
