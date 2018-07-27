@@ -1,0 +1,80 @@
+html {
+    background-color: #21d4fd;
+    background: linear-gradient(229deg, #21d4fd, #b721ff);
+
+    font-family: "Cabin", sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+    color: white;
+
+    text-shadow: 0 0 8px rgba(0, 0, 0, .2);
+}
+
+body {
+    margin: 64px auto;
+    max-width: 700px;
+    padding: 0 32px;
+}
+
+p + p {
+    margin-top: 32px;
+}
+
+h1 {
+    font-family: "Cabin Sketch", sans-serif;
+    font-size: 72px;
+    font-weight: bold;
+    color: white;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="1" height="1"%3E%3Crect x="0" y="0.5" width="1" height="0.5" fill="rgba(255, 255, 255, 0.55)"/%3E%3C/svg%3E') left bottom repeat-x;
+    transition: 
+        color 300ms ease-out,
+        box-shadow 300ms ease-out;
+}
+
+.logo {
+    float: right;
+}
+
+.bio {
+    list-style-type: none;
+}
+
+.bio li:not(.milestone) {
+    font-size: 14px;
+}
+
+.bio .milestone {
+    list-style-type: initial;
+    margin: 16px 0;
+}
+
+a:hover,
+a:active,
+a:focus {
+    outline: none;
+    box-shadow: inset 0px -1px #3000c1;
+    color: #3000c1;
+    transition:
+        color 0s,
+        box-shadow 0s;
+}
+
+#time:not(:empty)::after {
+    display: inline;
+    content: " – ";
+}
+
+#time:not(:empty) ~ span {
+    text-transform: lowercase;
+}
+
+::selection {
+    background: white;
+    color: black;
+}
