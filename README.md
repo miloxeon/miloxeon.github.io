@@ -1,6 +1,6 @@
 # Miloslav Voloskov – Personal page
 Personal web portfolio &amp; contacts page.
-Visit http://miloslav.website/
+Visit https://miloslav.website/
 
 ## Mentions
 This project and it's design was inspired and punctiliously curated by [@schatty](https://github.com/schatty).
