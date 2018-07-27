@@ -16,7 +16,10 @@ var output = document.getElementById('time')
 
 function update () {
     var date = new Date()
-    output.innerHTML = date.today() + ', ' + date.timeNow()
+    var clock = date.today() + ', ' + date.timeNow()
+    if (/\d\d.\d\d.\d\d\d\d, \d\d:\d\d:\d\d/gm.test(clock)) {
+    	output.innerHTML = clock
+    }
 }
 
 setInterval(update, 1000)
