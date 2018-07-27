@@ -10,6 +10,24 @@ html {
     text-shadow: 0 0 8px rgba(0, 0, 0, .2);
 }
 
+h1 {
+    font-family: "Cabin Sketch", sans-serif;
+    font-size: 72px;
+    font-weight: bold;
+    color: white;
+    line-height: 1.2;
+}
+
+@media (max-width: 550px) {
+    html {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
+
 body {
     margin: 64px auto;
     max-width: 700px;
@@ -20,14 +38,6 @@ p + p {
     margin-top: 32px;
 }
 
-h1 {
-    font-family: "Cabin Sketch", sans-serif;
-    font-size: 72px;
-    font-weight: bold;
-    color: white;
-    line-height: 1.2;
-}
-
 a {
     text-decoration: none;
     color: white;
@@ -35,10 +45,6 @@ a {
     transition: 
         color 300ms ease-out,
         box-shadow 300ms ease-out;
-}
-
-.logo {
-    float: right;
 }
 
 .bio {
@@ -57,13 +63,14 @@ a {
     left: 10px;
 }
 
-.bio li:not(.milestone) {
-    font-size: 14px;
-}
-
 .bio .milestone {
+    font-size: 24px;
     list-style-type: square;
     margin: 16px 0;
+}
+
+.bio :not(.milestone) {
+    font-size: 14px;
 }
 
 .bio .milestone:last-child {
