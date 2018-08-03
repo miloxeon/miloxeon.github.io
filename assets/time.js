@@ -1,9 +1,9 @@
 'use strict'
 
 Date.prototype.today = function () { 
-    return this.getDate() < 10 ? '0' : '' + this.getDate() + '.' +
-          (this.getMonth() + 1 < 10 ? '0' : '') + (this.getMonth() + 1) + '.' + 
-           this.getFullYear()
+    return (this.getDate() < 10 ? '0' : '') + this.getDate() + '.' +
+           (this.getMonth() + 1 < 10 ? '0' : '') + (this.getMonth() + 1) + '.' + 
+            this.getFullYear()
 }
 
 Date.prototype.timeNow = function () {
