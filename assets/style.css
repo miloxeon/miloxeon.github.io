@@ -151,13 +151,17 @@ footer > a:active {
 .bio[data-categories~="talks"] > [data-category~="talks"] { display: block; }
 .bio[data-categories~="projects"] > [data-category~="projects"] { display: block; }
 
-#time:not(:empty)::after {
+.time:not(:empty)::after {
     display: inline;
     content: " – ";
 }
 
-#time:not(:empty) ~ span {
+.time:not(:empty) ~ span {
     text-transform: lowercase;
+}
+
+.time {
+  font-family: monospace;
 }
 
 ::selection {
