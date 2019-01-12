@@ -42,7 +42,7 @@ a {
     text-decoration: none;
     color: white;
     background: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="1" height="1"%3E%3Crect x="0" y="0.5" width="1" height="0.5" fill="rgba(255, 255, 255, 0.55)"/%3E%3C/svg%3E') left bottom repeat-x;
-    transition: 
+    transition:
         color 300ms ease-out,
         box-shadow 300ms ease-out;
 }
@@ -118,6 +118,38 @@ footer > a:active {
 
     transition: filter 0s;
 }
+
+.filters {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+}
+
+.filter > :first-child {
+    margin-right: 8px;
+}
+
+.bio > li:not([data-category]):not(.meta) {
+    display: none;
+}
+
+.bio[data-categories~="personal"][data-categories~="certificates"][data-categories~="education"][data-categories~="talks"][data-categories~="projects"] > li:not([data-category]) {
+    display: list-item;
+}
+
+.bio > [data-category] {
+    display: none;
+}
+
+.bio[data-categories~="personal"] > [data-category~="personal"] { display: block; }
+.bio[data-categories~="certificates"] > [data-category~="certificates"] { display: block; }
+.bio[data-categories~="education"] > [data-category~="education"] { display: block; }
+.bio[data-categories~="talks"] > [data-category~="talks"] { display: block; }
+.bio[data-categories~="projects"] > [data-category~="projects"] { display: block; }
 
 #time:not(:empty)::after {
     display: inline;
