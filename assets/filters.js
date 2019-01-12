@@ -19,3 +19,4 @@ Array.prototype.slice.call(document.getElementsByClassName('filter')).forEach(fi
 })
 
 processFilters()
+document.getElementById('filters-container').removeAttribute('hidden')
