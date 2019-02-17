@@ -1,4 +1,4 @@
-# Miloslav Voloskov – Personal page
+# Miloslav Voloskov – Personal page [![Become a patron](https://miloslav.website/patreon.svg)](https://www.patreon.com/uyouthe)
 Personal web portfolio &amp; contacts page.
 Visit https://miloslav.website/
 
@@ -8,4 +8,3 @@ I'm glad to thank [@pepelsbey](https://github.com/pepelsbey) for helping me with
 
 ## License
 The code is under MIT license.
-You cannot use the content and design without permission.
