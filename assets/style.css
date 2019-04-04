@@ -121,12 +121,14 @@ footer > a:active {
 
 .filters {
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
 }
 
 .filter {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .filter > :first-child {
