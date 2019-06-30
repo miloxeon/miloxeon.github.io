@@ -1,4 +1,4 @@
-# Miloslav Voloskov – Personal page [![Become a patron](https://miloslav.website/patreon.svg)](https://www.patreon.com/uyouthe)
+# Miloslav Voloskov – Personal page 
 Personal web portfolio &amp; contacts page.
 Visit https://miloslav.website/
 
