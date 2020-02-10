@@ -1,18 +1,30 @@
+@font-face {
+  font-family: 'NB Akademie';
+  src: url('NBAkademieStd-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NB Akademie';
+  src: url('nb_akademie_std_medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
-  background: linear-gradient(229deg, #21d4fd, #b721ff);
-  background-color: #21d4fd;
-  font-family: "Cabin", sans-serif;
-  font-size: 24px;
+  /* background-color: black; */
+  font-family: "NB Akademie", sans-serif;
+  font-size: 18px;
   line-height: 1.5;
-  color: white;
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  /* color: white; */
 }
 
 h1 {
-  font-family: "Cabin Sketch", sans-serif;
+  font-family: "NB Akademie", sans-serif;
   font-size: 72px;
-  font-weight: bold;
-  color: white;
+  font-weight: normal;
+  /* color: white; */
   line-height: 1.2;
 }
 
@@ -38,7 +50,7 @@ p + p {
 
 a {
   text-decoration: none;
-  color: white;
+  /* color: white; */
   background: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="1" height="1"%3E%3Crect x="0" y="0.5" width="1" height="0.5" fill="rgba(255, 255, 255, 0.55)"/%3E%3C/svg%3E') left bottom repeat-x;
   transition:
     color 300ms ease-out,
@@ -70,7 +82,7 @@ footer > a:focus,
 footer > a:active {
   box-shadow: none;
   background: none;
-  filter: invert(100%);
+  filter: invert(50%);
   transition: filter 0s;
 }
 
@@ -78,16 +90,18 @@ footer > a:active {
   position: relative;
   list-style-type: none;
   padding-left: 32px;
+  line-height: 2;
+  margin-top: 24px;
 }
 
 .bio::before {
   content: '';
   display: block;
-  border-left: 1px dotted white;
+  border-left: 1px dotted black;
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 10px;
+  left: 13px;
 }
 
 .bio .milestone {
@@ -126,8 +140,18 @@ footer {
   cursor: pointer;
 }
 
+.filter + .filter {
+  margin-top: 8px;
+}
+
 .filter > :first-child {
   margin-right: 8px;
+}
+
+.filter > :last-child {
+  line-height: 1;
+  display: inline-block;
+  margin-top: 3px;
 }
 
 .bio > li:not([data-category]):not(.meta) {
@@ -162,6 +186,6 @@ footer {
 }
 
 ::selection {
-  background: white;
-  color: black;
+  background: black;
+  color: white;
 }
