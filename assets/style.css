@@ -205,6 +205,12 @@ footer > a .backgroundWannabe,
   fill: white;
 }
 
+.newsletterLink,
+.newsletterLink:visited {
+  color: black;
+  box-shadow: inset 0 -1px black;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     background-color: rgb(41, 41, 41);
@@ -219,6 +225,13 @@ footer > a .backgroundWannabe,
     color: white;
   }
 
+  a:hover,
+  a:active,
+  a:focus {
+    box-shadow: inset 0 -1px #7fdbff;
+    color: #7fdbff;
+  }
+
   footer > a :not(.backgroundWannabe),
   .contacts > a :not(.backgroundWannabe) {
     fill: white;
@@ -227,5 +240,11 @@ footer > a .backgroundWannabe,
   footer > a .backgroundWannabe,
   .contacts > a .backgroundWannabe {
     fill: rgb(41, 41, 41);
+  }
+
+  .newsletterLink,
+  .newsletterLink:visited {
+    color: white;
+    box-shadow: inset 0 -1px white;
   }
 }
