@@ -1,27 +1,14 @@
-@font-face {
-  font-family: 'NB Akademie';
-  src: url('NBAkademieStd-Medium.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'NB Akademie';
-  src: url('nb_akademie_std_medium.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
 html {
-  font-family: "NB Akademie", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 18px;
   line-height: 1.5;
 }
 
 h1 {
-  font-family: "NB Akademie", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 72px;
-  font-weight: normal;
+  line-height: 1.2;
+  font-weight: 600;
 }
 
 @media (max-width: 550px) {
@@ -46,19 +33,24 @@ p + p {
 
 a {
   text-decoration: none;
-  /* color: white; */
   background: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="1" height="1"%3E%3Crect x="0" y="0.5" width="1" height="0.5" fill="rgba(255, 255, 255, 0.55)"/%3E%3C/svg%3E') left bottom repeat-x;
   transition:
     color 300ms ease-out,
     box-shadow 300ms ease-out;
 }
 
-footer > a {
+footer > a,
+.contacts > a {
   display: inline-block;
   text-decoration: none;
   box-shadow: none;
   background: none;
   margin: 16px;
+  transition: filter 300ms;
+}
+
+footer > a path:not(.backgroundWannabe),
+.contacts > a path:not(.backgroundWannabe) {
   transition: filter 300ms;
 }
 
@@ -75,9 +67,20 @@ a:focus {
 
 footer > a:hover,
 footer > a:focus,
-footer > a:active {
+footer > a:active,
+.contacts > a:hover,
+.contacts > a:focus,
+.contacts > a:active {
   box-shadow: none;
   background: none;
+}
+
+footer > a:hover path:not(.backgroundWannabe),
+footer > a:focus path:not(.backgroundWannabe),
+footer > a:active path:not(.backgroundWannabe),
+.contacts > a:hover path:not(.backgroundWannabe),
+.contacts > a:focus path:not(.backgroundWannabe),
+.contacts > a:active path:not(.backgroundWannabe) {
   filter: invert(50%);
   transition: filter 0s;
 }
@@ -103,6 +106,7 @@ footer > a:active {
   font-size: 24px;
   list-style-type: square;
   margin: 24px 0;
+  font-weight: 500;
 }
 
 .bio :not(.milestone) {
@@ -117,7 +121,13 @@ footer > a:active {
 
 footer {
   margin-top: 72px;
-  word-spacing: 32px;
+  user-select: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contacts {
   user-select: none;
   display: flex;
   flex-wrap: wrap;
@@ -183,4 +193,39 @@ footer {
 ::selection {
   background: black;
   color: white;
+}
+
+footer > a :not(.backgroundWannabe),
+.contacts > a :not(.backgroundWannabe) {
+  fill: black;
+}
+
+footer > a .backgroundWannabe,
+.contacts > a .backgroundWannabe {
+  fill: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: rgb(41, 41, 41);
+    color: white;
+  }
+
+  .bio::before {
+    border-color: white;
+  }
+
+  a {
+    color: white;
+  }
+
+  footer > a :not(.backgroundWannabe),
+  .contacts > a :not(.backgroundWannabe) {
+    fill: white;
+  }
+
+  footer > a .backgroundWannabe,
+  .contacts > a .backgroundWannabe {
+    fill: rgb(41, 41, 41);
+  }
 }
