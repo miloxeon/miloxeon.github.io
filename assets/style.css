@@ -23,7 +23,7 @@ h1 {
 
 body {
   margin: 64px auto;
-  max-width: 700px;
+  max-width: 720px;
   padding: 0 32px;
 }
 
@@ -90,6 +90,11 @@ footer > a:active path:not(.backgroundWannabe),
   list-style-type: none;
   padding-left: 32px;
   margin-top: 24px;
+  margin-left: -32px;
+}
+
+.bio > li {
+  line-height: 1.3;
 }
 
 .bio::before {
@@ -102,19 +107,38 @@ footer > a:active path:not(.backgroundWannabe),
   left: 13px;
 }
 
-.bio .milestone {
+.bio > .milestone {
   font-size: 24px;
   list-style-type: square;
   margin: 24px 0;
   font-weight: 500;
 }
 
-.bio :not(.milestone) {
+.bio .milestone.meta {
+  line-height: 14px;
+  position: relative;
+}
+
+.bio .milestone.meta > span {
+  position: relative;
+  top: -3px;
+  font-size: 14px;
+  list-style-type: square;
+  margin: 24px 0;
+  font-weight: 500;
+}
+
+.bio > :not(.milestone) {
   font-size: 14px;
   margin-top: 10px;
 }
 
-.bio .milestone:last-child {
+.bio > :not(.milestone) + :not(.milestone) {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.bio > .milestone:last-child {
   list-style-type: none;
   margin-top: 64px;
 }
@@ -190,6 +214,31 @@ footer {
   font-family: monospace;
 }
 
+.standout {
+  margin-bottom: 35px;
+  background: black;
+  color: white;
+  padding: 10px 30px;
+  margin-left: -32px;
+  margin-right: -32px;
+}
+
+.standout a {
+  color: white;
+}
+
+.standout a:hover,
+.standout a:active,
+.standout a:focus {
+  box-shadow: inset 0 -1px #7fdbff;
+  color: #7fdbff;
+}
+
+.standout ::selection {
+  background: white;
+  color: black;
+}
+
 ::selection {
   background: black;
   color: white;
@@ -246,5 +295,10 @@ footer > a .backgroundWannabe,
   .newsletterLink:visited {
     color: white;
     box-shadow: inset 0 -1px white;
+  }
+
+  ::selection {
+    background: white;
+    color: black;
   }
 }
