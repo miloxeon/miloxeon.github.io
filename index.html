@@ -1,479 +1,968 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="I launch complex web products from the ground up. Hire me — hello@miloslav.website">
-
-        <title>Miloslav Voloskov — personal website</title>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600&display=swap" rel="stylesheet"> 
-        <link href="assets/style.css" rel="stylesheet">
-        <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16">
-    </head>
-    <body>
-        <header>
-            <h1>I launch complex web products from the ground up.</h1>
-        </header>
-        <section class="contacts" hidden></section>
-        <main>
-            <section class="standout">
-                <h2>
-                    Good news!
-                </h2>
-                <p>
-                    I now help people to find a job. My help is free. I'll give feedback and recommendations on your CV, we'll build a new CV together if you don't have one or want to improve yours, I then post your CV on my LinkedIn where I have several thousands connections.
-                </p>
-                <p>
-                    I earn no money from recruiters or companies for doing this.
-                </p>
-                <p>
-                    All you have to do is ⭐ <a href="https://t.me/mvoloskov" target="_blank" rel="nofollow noopener noreferrer" title="Telegram link @mvoloskov">DM me on Telegram</a>.
-                </p>
-            </section>
-            <p>
-                Hello.
-            </p>
-            <p>
-                I am a software architect and a team lead who solves tasks and launches products instead of fiddling around with tools.
-            </p>
-            <p>
-                Instead of following the latest frameworks cargo-cult, I design fundamental things like data models and product specifications, choosing the right paradigm and tools for your future product. I write guidelines and create application architecture from the ground up.
-            </p>
-            <p>
-                I make sure that your product will not fail because of the technical side and will have low support and extension costs. A complete list of tools I'm familiar with can be found in
-                <a href="https://docs.google.com/document/d/1misybBtgL7z_nema83AE6C6IFxZ5_qaJHG3ihosWfJY/edit?usp=sharing" target="_blank" rel="nofollow noopener noreferrer">my CV</a>.
-            </p>
-            <p>
-              Almost all of my projects can be found at <a href="https://github.com/mvoloskov" target="_blank" rel="nofollow noopener noreferrer">my GitHub</a>.
-            </p>
-            <p>
-              I publish
-              <a href="https://dev.to/mvoloskov" target="_blank" rel="nofollow noopener noreferrer">articles</a>
-              on dev.to. I cover topics such as software architecture, accessibility, design patterns, tools and libraries.
-            </p>
-            <section class="standout">
-                <h2>Newsletter</h2>
-                <p>
-                    I release projects in a decentralized manner.
-                </p>
-                <p>
-                    Articles are on dev.to, consumer products are on <a href="https://www.producthunt.com/@mvoloskov" target="_blank" rel="nofollow noopener noreferrer" title="Miloslav Voloskov at Product Hunt">Product Hunt</a>, open source tools are on GitHub and so on.
-                </p>
-                <p>
-                    I made a newsletter for people who want to never miss my releases. If you subscribe, you'll receive a plain text message everytime I release something. No spam and no ads ever. I never sell or share your data. Unsubscribe link has the highest priority.
-                </p>
-                <p>
-                    <span>
-                        ⭐
-                        <a class="newsletterLink" href="newsletter" target="_blank" rel="nofollow noopener noreferrer" title="My newsletter">Subscribe</a>
-                    </span>
-                </p>
-            </section>
-            <h2>Experience and bio</h2>
-            <section id="filters-container" hidden>
-              <h3>Filter achievements</h3>
-              <div class="filters">
-                <label class="filter">
-                  <input type="checkbox" data-category="personal" checked>
-                  <span>
-                      Personal
-                  </span>
-                </label>
-                <label class="filter">
-                  <input type="checkbox" data-category="certificates" checked>
-                  <span>
-                      Certificates
-                  </span>
-                </label>
-                <label class="filter">
-                  <input type="checkbox" data-category="education" checked>
-                  <span>
-                      Education
-                  </span>
-                </label>
-                <label class="filter">
-                  <input type="checkbox" data-category="talks" checked>
-                  <span>
-                      Talks & Community
-                  </span>
-                </label>
-                <label class="filter">
-                  <input type="checkbox" data-category="projects" checked>
-                  <span>
-                      Job & Projects
-                  </span>
-                </label>
-              </div>
-            </section>
-            <ul class="bio" id="bio" data-categories="personal certificates education talks projects">
-                <li class="milestone">Newbie 👶</li>
-                <li data-category="personal">Got my first PC, it had a Pentium I 100mHz and 8mb RAM. Had a good time playing retro games</li>
-                <li data-category="education">Started learning Pascal</li>
-                <li data-category="education">Left Pascal club for ITMO coding club</li>
-                <li data-category="education">Started learning C</li>
-                <li data-category="education">Started learning C++</li>
-                <li data-category="personal">Switched to Linux</li>
-                <li data-category="education">Passed school IT exams with highest result possible</li>
-                <li data-category="education">Left school after 9th grade for ITMO, successfully enrolled</li>
-                <li data-category="personal">Got my first laptop</li>
-                <li data-category="education certificates">Got <a href="https://s3.amazonaws.com/verify.edx.org/downloads/78300b6e79694a549396dcac43b5fd58/Certificate.pdf" target="_blank" rel="nofollow noopener noreferrer">Stat2.1x: Introduction to Statistics: Descriptive Statistics</a> and <a href="https://s3.amazonaws.com/verify.edx.org/downloads/1457e800f8df454791c35bdcd0ec999d/Certificate.pdf" target="_blank" rel="nofollow noopener noreferrer">Stat2.2x: Introduction to Statistics: Probability</a> certificates from Berkeley University</li>
-                <li data-category="education">Started learning Python</li>
-                <li data-category="education">Learned Git</li>
-                <li data-category="education projects">Created a fully-functional programmable computer from logic gates in LabView. It's got its own assembly language</li>
-                <li data-category="education certificates">Got <a href="https://www.coursera.org/api/legacyCertificates.v1/spark/statementOfAccomplishment/972530~6634442/pdf" target="_blank" rel="nofollow noopener noreferrer">Interactive Python</a> certificate from Rice University</li>
-                <li data-category="education projects">
-                    Implemented
-                    <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank" rel="nofollow noopener noreferrer">
-                    Game of Life</a> in Python, got interested in cellular automata
-                </li>
-                <li data-category="education">Had a great time learning CS, Discrete Math, algorithms, databases, paradigms and a lot of other things</li>
-                <li data-category="education certificates">Got <a href="https://s3.amazonaws.com/verify.edx.org/downloads/27271563eee04a4885a5353925675ad3/Certificate.pdf"  target="_blank" rel="nofollow noopener noreferrer">LFS101x: Introduction to Linux</a> certificate from Linux Foundation</li>
-                <li data-category="education certificates">Got <a href="https://courses.edx.org/certificates/65a25d7cd5b842d29a35ec4b98381a8d" target="_blank" rel="nofollow noopener noreferrer">DEV210x: Introduction to C++</a> certificate from Microsoft</li>
-                <li data-category="education certificates">Completed the King Challenge in C++, got 100%</li>
-                <li class="milestone">Began to understand stuff 🤔</li>
-                <li data-category="education certificates">Got <a href="https://prod-cert-bucket.s3.amazonaws.com/downloads/98db63b08d1a4f9a9d2761289d59b519/Statement.pdf" target="_blank" rel="nofollow noopener noreferrer">UML</a>, <a href="https://prod-cert-bucket.s3.amazonaws.com/downloads/052d1a2c455f4967861c93f7e9f83f08/Statement.pdf" target="_blank" rel="nofollow noopener noreferrer">SQL</a> and <a href="https://prod-cert-bucket.s3.amazonaws.com/downloads/b736ab033b76405b92dd54c45d304cdf/Statement.pdf" target="_blank" rel="nofollow noopener noreferrer">Relational Algebra</a> certificates from Stanford University</li>
-                <li data-category="education projects">
-                    Learned ActionScript, created
-                    <a href="https://github.com/mvoloskov/boldstepper" target="_blank" rel="nofollow noopener noreferrer">
-                    Bold Stepper</a>
-                </li>
-                <li data-category="education">Learned LaTex and MathLab</li>
-                <li data-category="education">Learned Scrum, Agile and more of UML</li>
-                <li data-category="education">Learned Subversion</li>
-                <li data-category="education certificates">Got <a href="https://courses.edx.org/certificates/fcc3bd4805734c4a94ff3f31624c5dbb" target="_blank" rel="nofollow noopener noreferrer">T002x: Mobile Computing and CS Principles</a> certificate from Trinity College</li>
-                <li data-category="projects">Hired by Apiona</li>
-                <li data-category="education">Learned PHP</li>
-                <li data-category="education talks">
-                    Visited my first local meetup ever,
-                    <a href="https://spb-frontend.ru">
-                    SPB Frontend</a>
-                </li>
-                <li data-category="education">Read The Code Complete</li>
-                <li data-category="education talks">
-                    Started to learn from
-                    <a href="https://hexlet.io" target="_blank" rel="nofollow noopener noreferrer">Hexlet</a>, never missed a podcast
-                </li>
-                <li data-category="education certificates">
-                    Successfully passed
-                    <a href="https://htmlacademy.ru" target="_blank" rel="nofollow noopener noreferrer">
-                    HTML Academy</a> intensive course, learned frontend basics
-                </li>
-                <li data-category="education projects">
-                    Created
-                    <a href="https://github.com/mvoloskov/js-battle" target="_blank" rel="nofollow noopener noreferrer">
-                    js-battle</a>, my first JS project ever
-                </li>
-                <li data-category="education projects">
-                    Created
-                    <a href="https://github.com/mvoloskov/pics" target="_blank" rel="nofollow noopener noreferrer">
-                    Pics</a>, learned NodeJS basics
-                </li>
-                <li class="milestone">Switched from coding to engineering 🧠</li>
-                <li data-category="education certificates">Started to get certificates at
-                    <a href="https://www.sololearn.com/Profile/668897" target="_blank" rel="nofollow noopener noreferrer">
-                    SoloLearn</a>
-                </li>
-                <li data-category="education talks">
-                    First public talk at
-                    <a href="https://wsd.events">
-                    Web Standards Days</a>, it was successful
-                </li>
-                <li data-category="education projects">Left Apiona for Under Construction</li>
-                <li data-category="education">Learned React and Redux</li>
-                <li data-category="education certificates">Successfully passed React Intensive course by
-                    <a href="https://learn.javascript.ru" target="_blank" rel="nofollow noopener noreferrer">
-                    javascript.ru</a>
-                </li>
-                <li class="milestone">Complete switch to web technologies ⚡</li>
-                <li data-category="education">Did some research on CRDT</li>
-                <li data-category="education certificates">Got <a href="https://www.coursera.org/account/accomplishments/certificate/8W5KN27E8HTD" target="_blank" rel="nofollow noopener noreferrer">Cybersecurity</a> certificate from University of Maryland</li>
-                <li data-category="education projects">
-                    Wrote some
-                    <a href="https://github.com/mvoloskov/cybersecurity" target="_blank" rel="nofollow noopener noreferrer">
-                    essays on cybersecurity</a>
-                </li>
-                <li data-category="talks">
-                    Joined
-                    <a href="https://www.freecodecamp.org/" target="_blank" rel="nofollow noopener noreferrer">
-                    FreeCodeCamp community</a>
-                </li>
-                <li data-category="talks">
-                    Was invited to talk at
-                    <a href="https://ritfest.ru" target="_blank" rel="nofollow noopener noreferrer">RIT conference</a> at Skolkovo, Moscow. Denied that because of my graduation
-                </li>
-                <li data-category="education projects">
-                    Created
-                    <a href="https://github.com/mvoloskov/dolphin" target="_blank" rel="nofollow noopener noreferrer">
-                    Dolphin</a> and graduated with A mark. Learned a lot about persistency, fundamental paradigms incompatibility and performance on the web, data models and data binding
-                </li>
-                <li data-category="projects">
-                    Tried to create
-                    <a href="https://github.com/kardinalframework" target="_blank" rel="nofollow noopener noreferrer">
-                    Kardinal</a> (now dead), faced another fundamental incompatibilities. Learned a lot about paradigms
-                </li>
-                <li data-category="talks">
-                    <a href="https://github.com/dwyl" target="_blank" rel="nofollow noopener noreferrer">DWYL</a>
-                invites me to join. Accepted them</li>
-                <li data-category="talks">
-                    <a href="https://netology.ru/" target="_blank" rel="nofollow noopener noreferrer">
-                    Netology</a> offers me an expert position. Denied them
-                </li>
-                <li data-category="talks">
-                    Talked at
-                    <a href="https://pitercss.com/" target="_blank" rel="nofollow noopener noreferrer">
-                    PiterCSS</a>
-                </li>
-                <li data-category="education certificates">
-                    Passed
-                    <a href="https://sitthetest.com" target="_blank" rel="nofollow noopener noreferrer">Sit the Test</a>
-                </li>
-                <li data-category="personal">
-                  Veniamin Vekk <a href="http://veqqa.ru/blog/all/obnovil-logotip-na-sayte-i-zagolovok-bloga/" target="_blank" rel="nofollow noopener noreferrer">mentioned me</a> at his design block
-                </li>
-                <li data-category="projects talks">
-                    Created large
-                    <a href="https://github.com/mvoloskov/baumeister-manual" target="_blank" rel="nofollow noopener noreferrer">
-                    Baumeister manual</a>, Russian
-                </li>
-                <li data-category="education">Learned a lot from <a href="https://www.destroyallsoftware.com/screencasts" target="_blank" rel="nofollow noopener noreferrer">DESTROY&shy;ALL&shy;SOFTWARE</a>. Love it</li>
-                <li data-category="education certificates">Scored the highest possible result (C2) in IELTS test</li>
-                <li data-category="projects">Left Under Construction, hired by Bizon Insurance Group</li>
-                <li data-category="education">Learned Clojure and ClojureScript</li>
-                <li data-category="education">Learned CouchDB, PouchDB, Docker and Ansible</li>
-                <li class="milestone">Able to implement almost any web product 👽</li>
-                <li data-category="talks">
-                    Created a
-                    <a href="https://hub.docker.com/r/bizongroup/alpine-curl-bash" target="_blank" rel="nofollow noopener noreferrer">
-                    dockerfile</a> that got 100k+ pulls
-                </li>
-                <li data-category="talks">Left Bizon Insurance Group. Learned a lot. The most valuable experience of my carreer</li>
-                <li data-category="personal">
-                  Got myself a shiny new MacBook 12", my first Apple computer ever
-                </li>
-                <li data-category="projects">
-                    Created
-                    <a href="https://github.com/mvoloskov/seoblock" target="_blank" rel="nofollow noopener noreferrer">
-                    SeoBlock</a> from the idea of
-                    <a href="https://www.facebook.com/serge.soloview" target="_blank" rel="nofollow noopener noreferrer">
-                    Serge Soloview</a>. My first browser extension ever
-                </li>
-                <li data-category="education">
-                    Got familiar with
-                    <a href="https://strapi.io" target="_blank" rel="nofollow noopener noreferrer">
-                    Strapi</a>, absolutely awesome tool
-                </li>
-                <li data-category="personal">
-                    Met
-                    <a href="https://martyn.guru" target="_blank" rel="nofollow noopener noreferrer">
-                    Martyn</a>
-                </li>
-                <li data-category="talks">
-                    <a href="gridtalk">Talked</a> at
-                    <a href="https://pitercss.com/" target="_blank" rel="nofollow noopener noreferrer">
-                    PiterCSS</a> (eight-pixel grid)
-                </li>
-                <li data-category="personal">
-                    Met
-                    <a href="https://twitter.com/hellodeadline" target="_blank" rel="nofollow noopener noreferrer">
-                    Sveta</a>
-                </li>
-                <li data-category="personal">
-                    Got
-                    <a href="https://www.linkedin.com/in/mvoloskov/" target="_blank" rel="nofollow noopener noreferrer">
-                    LinkedIn profile</a>
-                </li>
-                <li data-category="projects personal talks">
-                    Started a
-                    <a href="https://dev.to/mvoloskov" target="_blank" rel="nofollow noopener noreferrer">
-                    dev.to profile</a> and got my first 250 followers in no time
-                </li>
-                <li data-category="projects personal">
-                    Wrote an article about
-                    <a href="https://dev.to/mvoloskov/pwa-and-website-responsiveness-are-not-the-same-44pc" target="_blank" rel="nofollow noopener noreferrer">
-                    PWA Responsiveness</a>
-                </li>
-                <li data-category="projects personal">
-                    Created a
-                    <a href="https://dev.to/mvoloskov/switching-class-names-like-a-boss-with-deciders-2pie" target="_blank" rel="nofollow noopener noreferrer">
-                    Decider pattern</a>
-                    and
-                    <a href="https://github.com/mvoloskov/decider" target="_blank" rel="nofollow noopener noreferrer">
-                    library</a>. The biggest GitHub stars I ever got
-                </li>
-                <li data-category="projects personal">
-                    Launched
-                    <a href="https://rhittm.github.io" target="_blank" rel="nofollow noopener noreferrer">
-                    Rhittm</a> — an app that suggests you Instagram hashtags and the best time to post. I spent only one day creating it and it blasted up to 128 users in just the day after, even without an official ProductHunt release
-                </li>
-                <li data-category="projects personal">
-                    Wrote a
-                    <a href="https://dev.to/mvoloskov/pwa-checklist-2019-25j4" target="_blank" rel="nofollow noopener noreferrer">
-                    PWA Checklist</a> article. Two thousand views in two days
-                </li>
-                <li data-category="projects personal">
-                    My
-                    <a href="https://dev.to/mvoloskov/scalable-architecture-without-magic-and-how-to-build-it-if-youre-not-google-336a" target="_blank" rel="nofollow noopener noreferrer">
-                    article on scalable architecture</a> blasted off like Falcon Heavy and I made it to the
-                    <a href="https://dev.to" target="_blank" rel="nofollow noopener noreferrer">
-                    dev.to</a>
-                    main page. Amazing experience. Got 500 followers
-                </li>
-                <li data-category="projects personal talks">
-                  Got 1500 followers on dev.to
-                </li>
-                <li data-category="projects personal">
-                    Wrote
-                    <a href="https://dev.to/mvoloskov/verdana--the-typeface-that-changed-everything-3803" target="_blank" rel="nofollow noopener noreferrer">
-                    a love letter to Verdana</a>
-                </li>
-                <li class="personal projects">
-                  Created
-                  <a href="https://www.producthunt.com/posts/the-code-of-conduct-generator" target="_blank" rel="nofollow noopener noreferrer">The Code of Conduct generator</a>.
-                  Got the Product of the Day award with basically a six lines of javascript
-                </li>
-                <li class="personal projects talks">
-                  Passed 2000 followers on dev.to
-                </li>
-                <li class="personal projects">
-                  The beta version of <a href="https://noo.js.org/" target="_blank" rel="nofollow noopener noreferrer">Noo</a>, my password manager, is live
-                </li>
-                <li class="personal projects">
-                  Talked at <a href="https://www.webdevsummit.info/" target="_blank" rel="nofollow noopener noreferrer">WebDevSummit</a>, everyone was amazed, got some testimonials
-                </li>
-                <li class="personal projects">
-                  Joined Ostrovok as a teamlead, moved to Moscow
-                </li>
-                <li class="personal">
-                  Started to cure depression
-                </li>
-                <li class="personal projects">
-                  Left Ostrovok, moved back to Saint-Petersburg
-                </li>
-                <li class="personal projects">
-                  Released <a href="https://producthunt.com/posts/sleeep" target="_blank" rel="nofollow noopener noreferrer">sleeep</a>
-                </li>
-                <li class="personal projects">
-                  Joined Openland
-                </li>
-                <li class="personal projects">
-                    <a href="https://producthunt.com/posts/sleeep" target="_blank" rel="nofollow noopener noreferrer">Sleeep</a> is nominated for the Golden Kitty award
-                </li>
-                <li class="personal projects">
-                    Left Openland for Studybay
-                </li>
-                <li class="personal projects">
-                    Created <a href="https://github.com/mvoloskov/aniro" target="_blank" rel="nofollow noopener noreferrer">Aniro</a>
-                </li>
-                <li class="personal projects">
-                    Created <a href="https://github.com/mvoloskov/normilio" target="_blank" rel="nofollow noopener noreferrer">Normilio</a>
-                </li>
-                <li class="personal projects">
-                    Created <a href="https://github.com/mvoloskov/modulus" target="_blank" rel="nofollow noopener noreferrer">Modulus</a>
-                </li>
-                <li class="personal projects">
-                    Created <a href="https://github.com/mvoloskov/formie" target="_blank" rel="nofollow noopener noreferrer">Formie</a>
-                </li>
-                <li class="personal projects">
-                    Created <a href="https://pwagym.com" target="_blank" rel="nofollow noopener noreferrer">PWAGYM</a> and <a href="https://github.com/mvoloskov/pwacss" target="_blank" rel="nofollow noopener noreferrer">pwacss</a>
-                </li>
-                <li class="personal projects">
-                    Introduced <a href="https://dev.to/mvoloskov/introduction-to-pragmatic-beauty-ei4" target="_blank" rel="nofollow noopener noreferrer">Pragmatic Beauty</a>
-                </li>
-                <li class="personal projects">
-                    Created <a href="https://github.com/mvoloskov/extensio" target="_blank" rel="nofollow noopener noreferrer">Extensio</a>
-                </li>
-                <li class="personal projects">
-                    Launched <a href="newsletter" target="_blank" rel="nofollow noopener noreferrer">my own newsletter</a>
-                </li>
-                <li class="personal projects">
-                    Created a <a href="https://t.me/addstickers/AntonZiga" target="_blank" rel="nofollow noopener noreferrer">Telegram stickerpack</a>
-                </li>
-                <li class="personal">
-                    Switched to Firefox and DuckDuckGo
-                </li>
-                <li class="personal projects">
-                    Created <a href="https://github.com/mvoloskov/cosmopolite" target="_blank" rel="nofollow noopener noreferrer">Cosmopolite</a>
-                </li>
-                <li class="personal projects">
-                    Created <a href="https://github.com/mvoloskov/regulatio" target="_blank" rel="nofollow noopener noreferrer">Regulatio</a>
-                </li>
-
-                <li class="meta today">
-                    <span id="time" class="time"></span>
-                    <span class="time">We are here</span>
-                </li>
-                <li class="meta">
-                    <em>Want your product to be here?</em> Let me know: <a href="mailto:hello@miloslav.website">hello@miloslav.website</a>
-                </li>
-            </ul>
-        </main>
-        <footer>
-            <h2 class="ih">Links</h2>
-            <ul class="pillbox">
-                <li>
-                    <a href="mailto:hello@miloslav.website" title="Email: hello@miloslav.website">
-                        <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                            <title>Email</title>
-                            <path d="M50 0C22.386 0 0 22.386 0 50s22.386 50 50 50 50-22.386 50-50S77.614 0 50 0zm18.871 59.068c-2.809 2.808-6.479 4.428-10.098 4.428-2.105 0-3.832-.811-4.644-2.105-.271-.433-.323-.701-.485-1.675-2.052 2.376-4.21 3.402-7.233 3.402-5.345 0-8.747-3.996-8.747-10.151 0-9.124 5.994-16.683 13.174-16.683 3.021 0 4.535.756 5.994 3.024l.54-1.891h6.368c-.321 1.081-1.297 4.374-1.565 5.562l-3.239 11.986a6.09 6.09 0 0 0-.217 1.619c0 .864.485 1.35 1.404 1.35 1.025 0 2.32-.539 3.4-1.403 2.646-2.052 4.373-6.046 4.373-10.201 0-4.967-2.32-9.286-6.209-11.716-2.43-1.457-5.83-2.268-9.664-2.268-11.393 0-19.384 7.559-19.384 18.249 0 10.367 7.18 17.17 18.032 17.17 2.808 0 5.776-.433 8.263-1.186 2.105-.65 3.457-1.297 6.047-2.862l3.293 4.751c-2.916 1.729-4.213 2.376-6.75 3.133a38.955 38.955 0 0 1-11.444 1.726c-7.613 0-13.552-2.158-17.817-6.427C28.213 62.904 26 57.18 26 50.918c0-6.695 2.268-12.473 6.587-16.846 4.967-4.967 11.501-7.396 19.869-7.396C65.036 26.676 74 34.773 74 46.058c0 5.075-1.836 9.719-5.129 13.01z" fill="currentColor"/>
-                            <path d="M51.646 41.413c-2.052 0-3.94 1.351-5.292 3.888-1.295 2.429-2.159 5.615-2.159 8.1 0 2.86 1.081 4.371 3.131 4.371 1.999 0 3.889-1.565 5.293-4.319 1.295-2.537 2.158-5.828 2.158-8.313 0-2.215-1.241-3.727-3.131-3.727z" fill="currentColor"/>
-                        </svg>
-                        <span class="ih">
-                            Email: hello@miloslav.website
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://docs.google.com/document/d/1misybBtgL7z_nema83AE6C6IFxZ5_qaJHG3ihosWfJY/edit?usp=sharing" title="CV" target="_blank" rel="nofollow noopener noreferrer">
-                        <title>CV</title>
-                        <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                            <path d="M17 4c-1.859 0-2.962 1.587-3 3v86c0 1.57 1.43 3 3 3h52c.79-.01 1.573-.34 2.125-.906l14-14c.548-.55.869-1.318.875-2.094V7c0-1.57-1.43-3-3-3zm3 6h60v66H69c-1.683 0-3.022 1.533-3 3v11H20zm30 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12zm0 14c-6 0-13 2-13 10h26c0-8-7-10-13-10zM29 44a3 3 0 0 0 0 6h42a3 3 0 1 0 0-6zm0 12a3 3 0 0 0 0 6h42a3 3 0 1 0 0-6zm0 12a3 3 0 0 0 0 6h42a3 3 0 0 0 0-6zm43 14h3.75L72 85.75z" fill="currentColor"/>
-                        </svg>
-                        <span class="ih">
-                            CV
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/mvoloskov" title="GitHub: @mvoloskov" target="_blank" rel="nofollow noopener noreferrer">
-                        <title>GitHub: @mvoloskov</title>
-                        <svg height="30" width="30" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M512 0C229.25 0 0 229.25 0 512c0 226.25 146.688 418.125 350.156 485.812 25.594 4.688 34.938-11.125 34.938-24.625 0-12.188-.469-52.562-.719-95.312C242 908.812 211.906 817.5 211.906 817.5c-23.312-59.125-56.844-74.875-56.844-74.875-46.531-31.75 3.53-31.125 3.53-31.125 51.406 3.562 78.47 52.75 78.47 52.75 45.688 78.25 119.875 55.625 149 42.5 4.654-33 17.904-55.625 32.5-68.375-113.656-12.937-233.218-56.875-233.218-253.063 0-55.938 19.969-101.562 52.656-137.406-5.219-13-22.844-65.094 5.062-135.562 0 0 42.938-13.75 140.812 52.5 40.812-11.406 84.594-17.031 128.125-17.219 43.5.188 87.312 5.875 128.188 17.281 97.688-66.312 140.688-52.5 140.688-52.5 28 70.531 10.375 122.562 5.125 135.5 32.812 35.844 52.625 81.469 52.625 137.406 0 196.688-119.75 240-233.812 252.688 18.438 15.875 34.75 47 34.75 94.75 0 68.438-.688 123.625-.688 140.5 0 13.625 9.312 29.562 35.25 24.562C877.438 930 1024 738.125 1024 512 1024 229.25 794.75 0 512 0z" fill="currentColor"/>
-                        </svg>
-                        <span class="ih">
-                            GitHub
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://vk.com/mvoloskov" title="VK: @mvoloskov" target="_blank" rel="nofollow noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 548.358 548.358">
-                            <title>VK: @mvoloskov</title>
-                            <path d="M545.451 400.298c-.664-1.431-1.283-2.618-1.858-3.569-9.514-17.135-27.695-38.167-54.532-63.102l-.567-.571-.284-.28-.287-.287h-.288c-12.18-11.611-19.893-19.418-23.123-23.415-5.91-7.614-7.234-15.321-4.004-23.13 2.282-5.9 10.854-18.36 25.696-37.397 7.807-10.089 13.99-18.175 18.556-24.267 32.931-43.78 47.208-71.756 42.828-83.939l-1.701-2.847c-1.143-1.714-4.093-3.282-8.846-4.712-4.764-1.427-10.853-1.663-18.278-.712l-82.224.568c-1.332-.472-3.234-.428-5.712.144l-3.713.859-1.431.715-1.136.859c-.952.568-1.999 1.567-3.142 2.995-1.137 1.423-2.088 3.093-2.848 4.996-8.952 23.031-19.13 44.444-30.553 64.238-7.043 11.803-13.511 22.032-19.418 30.693-5.899 8.658-10.848 15.037-14.842 19.126-4 4.093-7.61 7.372-10.852 9.849-3.237 2.478-5.708 3.525-7.419 3.142-1.715-.383-3.33-.763-4.859-1.143-2.663-1.714-4.805-4.045-6.42-6.995-1.622-2.95-2.714-6.663-3.285-11.136-.568-4.476-.904-8.326-1-11.563-.089-3.233-.048-7.806.145-13.706.198-5.903.287-9.897.287-11.991 0-7.234.141-15.085.424-23.555.288-8.47.521-15.181.716-20.125.194-4.949.284-10.185.284-15.705s-.336-9.849-1-12.991a44.442 44.442 0 0 0-2.99-9.137c-1.335-2.95-3.289-5.232-5.853-6.852-2.569-1.618-5.763-2.902-9.564-3.856-10.089-2.283-22.936-3.518-38.547-3.71-35.401-.38-58.148 1.906-68.236 6.855-3.997 2.091-7.614 4.948-10.848 8.562-3.427 4.189-3.905 6.475-1.431 6.851 11.422 1.711 19.508 5.804 24.267 12.275l1.715 3.429c1.334 2.474 2.666 6.854 3.999 13.134 1.331 6.28 2.19 13.227 2.568 20.837.95 13.897.95 25.793 0 35.689-.953 9.9-1.853 17.607-2.712 23.127-.859 5.52-2.143 9.993-3.855 13.418-1.715 3.426-2.856 5.52-3.428 6.28-.571.76-1.047 1.239-1.425 1.427a21.387 21.387 0 0 1-7.71 1.431c-2.667 0-5.901-1.334-9.707-4-3.805-2.666-7.754-6.328-11.847-10.992-4.093-4.665-8.709-11.184-13.85-19.558-5.137-8.374-10.467-18.271-15.987-29.691l-4.567-8.282c-2.855-5.328-6.755-13.086-11.704-23.267-4.952-10.185-9.329-20.037-13.134-29.554-1.521-3.997-3.806-7.04-6.851-9.134l-1.429-.859c-.95-.76-2.475-1.567-4.567-2.427a30.301 30.301 0 0 0-6.567-1.854l-78.229.568c-7.994 0-13.418 1.811-16.274 5.428l-1.143 1.711c-.571.953-.859 2.475-.859 4.57 0 2.094.571 4.664 1.714 7.707 11.42 26.84 23.839 52.725 37.257 77.659 13.418 24.934 25.078 45.019 34.973 60.237 9.897 15.229 19.985 29.602 30.264 43.112 10.279 13.515 17.083 22.176 20.412 25.981 3.333 3.812 5.951 6.662 7.854 8.565l7.139 6.851c4.568 4.569 11.276 10.041 20.127 16.416 8.853 6.379 18.654 12.659 29.408 18.85 10.756 6.181 23.269 11.225 37.546 15.126 14.275 3.905 28.169 5.472 41.684 4.716h32.834c6.659-.575 11.704-2.669 15.133-6.283l1.136-1.431c.764-1.136 1.479-2.901 2.139-5.276.668-2.379 1-5 1-7.851-.195-8.183.428-15.558 1.852-22.124 1.423-6.564 3.045-11.513 4.859-14.846 1.813-3.33 3.859-6.14 6.136-8.418 2.282-2.283 3.908-3.666 4.862-4.142.948-.479 1.705-.804 2.276-.999 4.568-1.522 9.944-.048 16.136 4.429 6.187 4.473 11.99 9.996 17.418 16.56 5.425 6.57 11.943 13.941 19.555 22.124 7.617 8.186 14.277 14.271 19.985 18.274l5.708 3.426c3.812 2.286 8.761 4.38 14.853 6.283 6.081 1.902 11.409 2.378 15.984 1.427l73.087-1.14c7.229 0 12.854-1.197 16.844-3.572 3.998-2.379 6.373-5 7.139-7.851.764-2.854.805-6.092.145-9.712-.677-3.611-1.344-6.136-2.008-7.563z" fill="currentColor"/>
-                        </svg>
-                        <span class="ih">
-                            VK
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://t.me/mvoloskov" target="_blank" rel="nofollow noopener noreferrer" title="Telegram: @mvoloskov">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-                            <title>Telegram: @mvoloskov</title>
-                            <g transform="matrix(1,0,0,1,-1739.38,-1225.6)">
-                                <path d="M1768.5,1240.16C1768.5,1248.2 1761.98,1254.72 1753.94,1254.72C1745.9,1254.72 1739.38,1248.2 1739.38,1240.16C1739.38,1232.12 1745.9,1225.6 1753.94,1225.6C1761.98,1225.6 1768.5,1232.12 1768.5,1240.16L1768.5,1240.16ZM1757.15,1243.48C1757.6,1242.26 1759.24,1237.6 1759.5,1236.38C1759.8,1235 1759.18,1234.87 1757.76,1235.33C1756.34,1235.79 1752.71,1237.14 1752.1,1237.36C1751.48,1237.58 1748.5,1238.58 1747.89,1238.88C1746.62,1239.55 1747.24,1240.58 1748.65,1241.12C1752.86,1243.14 1751.67,1242.11 1753.55,1245.86C1753.94,1246.81 1754.85,1248.44 1755.72,1247.21C1756.18,1246.51 1756.8,1244.45 1757.15,1243.48Z" fill="currentColor" />
-                            </g>
-                        </svg>
-                        <span class="ih">
-                            Telegram
-                        </span>
-                    </a>
-                </li>
-            </ul>
-        </footer>
-        <script src="assets/time.js"></script>
-        <script src="assets/filters.js"></script>
-    </body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="description"
+			content="I launch complex web products from the ground up. Hire me — hello@miloslav.website"
+		/>
+		<title>Miloslav Voloskov — personal website</title>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="assets/style.css" rel="stylesheet" />
+		<link
+			rel="icon"
+			type="image/png"
+			href="assets/favicon-32x32.png"
+			sizes="32x32"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			href="assets/favicon-16x16.png"
+			sizes="16x16"
+		/>
+	</head>
+	<body>
+		<header>
+			<h1>I launch complex web products from the ground up.</h1>
+		</header>
+		<main>
+			<section class="standout">
+				<h2>Good news!</h2>
+				<p>
+					I now help people to find a job. My help is free. I'll give
+					feedback and recommendations on your CV, we'll build a new CV
+					together if you don't have one or want to improve yours, I then
+					post your CV on my LinkedIn where I have several thousands
+					connections.
+				</p>
+				<p>I earn no money from recruiters or companies for doing this.</p>
+				<p>
+					All you have to do is ⭐
+					<a
+						href="https://t.me/mvoloskov"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						title="Telegram link @mvoloskov"
+						>DM me on Telegram</a
+					>.
+				</p>
+			</section>
+			<p>Hello.</p>
+			<p>
+				I am a software architect and a team lead who solves tasks and
+				launches products instead of fiddling around with tools.
+			</p>
+			<p>
+				Instead of following the latest frameworks cargo-cult, I design
+				fundamental things like data models and product specifications,
+				choosing the right paradigm and tools for your future product. I
+				write guidelines and create application architecture from the ground
+				up.
+			</p>
+			<p>
+				I make sure that your product will not fail because of the technical
+				side and will have low support and extension costs. A complete list
+				of tools I'm familiar with can be found in
+				<a
+					href="https://docs.google.com/document/d/1misybBtgL7z_nema83AE6C6IFxZ5_qaJHG3ihosWfJY/edit?usp=sharing"
+					target="_blank"
+					rel="nofollow noopener noreferrer"
+					>my CV</a
+				>.
+			</p>
+			<p>
+				Almost all of my projects can be found at
+				<a
+					href="https://github.com/mvoloskov"
+					target="_blank"
+					rel="nofollow noopener noreferrer"
+					>my GitHub</a
+				>.
+			</p>
+			<p>
+				I publish
+				<a
+					href="https://dev.to/mvoloskov"
+					target="_blank"
+					rel="nofollow noopener noreferrer"
+					>articles</a
+				>
+				on dev.to. I cover topics such as software architecture,
+				accessibility, design patterns, tools and libraries.
+			</p>
+			<section class="standout">
+				<h2>Newsletter</h2>
+				<p>I release projects in a decentralized manner.</p>
+				<p>
+					Articles are on dev.to, consumer products are on
+					<a
+						href="https://www.producthunt.com/@mvoloskov"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						title="Miloslav Voloskov at Product Hunt"
+						>Product Hunt</a
+					>, open source tools are on GitHub and so on.
+				</p>
+				<p>
+					I made a newsletter for people who want to never miss my
+					releases. If you subscribe, you'll receive a plain text message
+					everytime I release something. No spam and no ads ever. I never
+					sell or share your data. Unsubscribe link has the highest
+					priority.
+				</p>
+				<p>
+					<span>
+						⭐
+						<a
+							class="newsletterLink"
+							href="newsletter"
+							target="_blank"
+							rel="nofollow noopener noreferrer"
+							title="My newsletter"
+							>Subscribe</a
+						>
+					</span>
+				</p>
+			</section>
+			<h2>Experience and bio</h2>
+			<ul class="bio" id="bio">
+				<li class="milestone">Newbie 👶</li>
+				<li>
+					Got my first PC, it had a Pentium I 100mHz and 8mb RAM. Had a
+					good time playing retro games
+				</li>
+				<li>Started learning Pascal</li>
+				<li>Left Pascal club for ITMO coding club</li>
+				<li>Started learning C</li>
+				<li>Started learning C++</li>
+				<li>Switched to Linux</li>
+				<li>Passed school IT exams with highest result possible</li>
+				<li>Left school after 9th grade for ITMO, successfully enrolled</li>
+				<li>Got my first laptop</li>
+				<li>
+					Got
+					<a
+						href="https://s3.amazonaws.com/verify.edx.org/downloads/78300b6e79694a549396dcac43b5fd58/Certificate.pdf"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>Stat2.1x: Introduction to Statistics: Descriptive
+						Statistics</a
+					>
+					and
+					<a
+						href="https://s3.amazonaws.com/verify.edx.org/downloads/1457e800f8df454791c35bdcd0ec999d/Certificate.pdf"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>Stat2.2x: Introduction to Statistics: Probability</a
+					>
+					certificates from Berkeley University
+				</li>
+				<li>Started learning Python</li>
+				<li>Learned Git</li>
+				<li>
+					Created a fully-functional programmable computer from logic gates
+					in LabView. It's got its own assembly language
+				</li>
+				<li>
+					Got
+					<a
+						href="https://www.coursera.org/api/legacyCertificates.v1/spark/statementOfAccomplishment/972530~6634442/pdf"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>Interactive Python</a
+					>
+					certificate from Rice University
+				</li>
+				<li>
+					Implemented
+					<a
+						href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>Game of Life</a
+					>
+					in Python, got interested in cellular automata
+				</li>
+				<li>
+					Had a great time learning CS, Discrete Math, algorithms,
+					databases, paradigms and a lot of other things
+				</li>
+				<li>
+					Got
+					<a
+						href="https://s3.amazonaws.com/verify.edx.org/downloads/27271563eee04a4885a5353925675ad3/Certificate.pdf"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>LFS101x: Introduction to Linux</a
+					>
+					certificate from Linux Foundation
+				</li>
+				<li>
+					Got
+					<a
+						href="https://courses.edx.org/certificates/65a25d7cd5b842d29a35ec4b98381a8d"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>DEV210x: Introduction to C++</a
+					>
+					certificate from Microsoft
+				</li>
+				<li>Completed the King Challenge in C++, got 100%</li>
+				<li class="milestone">Began to understand stuff 🤔</li>
+				<li>
+					Got
+					<a
+						href="https://prod-cert-bucket.s3.amazonaws.com/downloads/98db63b08d1a4f9a9d2761289d59b519/Statement.pdf"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>UML</a
+					>,
+					<a
+						href="https://prod-cert-bucket.s3.amazonaws.com/downloads/052d1a2c455f4967861c93f7e9f83f08/Statement.pdf"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>SQL</a
+					>
+					and
+					<a
+						href="https://prod-cert-bucket.s3.amazonaws.com/downloads/b736ab033b76405b92dd54c45d304cdf/Statement.pdf"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>Relational Algebra</a
+					>
+					certificates from Stanford University
+				</li>
+				<li>
+					Learned ActionScript, created
+					<a
+						href="https://github.com/mvoloskov/boldstepper"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>Bold Stepper</a
+					>
+				</li>
+				<li>Learned LaTex and MathLab</li>
+				<li>Learned Scrum, Agile and more of UML</li>
+				<li>Learned Subversion</li>
+				<li>
+					Got
+					<a
+						href="https://courses.edx.org/certificates/fcc3bd4805734c4a94ff3f31624c5dbb"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>T002x: Mobile Computing and CS Principles</a
+					>
+					certificate from Trinity College
+				</li>
+				<li data-category="projects">Hired by Apiona</li>
+				<li>Learned PHP</li>
+				<li data-category="education talks">
+					Visited my first local meetup ever,
+					<a href="https://spb-frontend.ru">SPB Frontend</a>
+				</li>
+				<li>Read The Code Complete</li>
+				<li data-category="education talks">
+					Started to learn from
+					<a
+						href="https://hexlet.io"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>Hexlet</a
+					>, never missed a podcast
+				</li>
+				<li>
+					Successfully passed
+					<a
+						href="https://htmlacademy.ru"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						HTML Academy</a
+					>
+					intensive course, learned frontend basics
+				</li>
+				<li>
+					Created
+					<a
+						href="https://github.com/mvoloskov/js-battle"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						js-battle</a
+					>, my first JS project ever
+				</li>
+				<li>
+					Created
+					<a
+						href="https://github.com/mvoloskov/pics"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						Pics</a
+					>, learned NodeJS basics
+				</li>
+				<li class="milestone">Switched from coding to engineering 🧠</li>
+				<li>
+					Started to get certificates at
+					<a
+						href="https://www.sololearn.com/Profile/668897"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						SoloLearn</a
+					>
+				</li>
+				<li data-category="education talks">
+					First public talk at
+					<a href="https://wsd.events"> Web Standards Days</a>, it was
+					successful
+				</li>
+				<li>Left Apiona for Under Construction</li>
+				<li>Learned React and Redux</li>
+				<li>
+					Successfully passed React Intensive course by
+					<a
+						href="https://learn.javascript.ru"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						javascript.ru</a
+					>
+				</li>
+				<li class="milestone">Complete switch to web technologies ⚡</li>
+				<li>Did some research on CRDT</li>
+				<li>
+					Got
+					<a
+						href="https://www.coursera.org/account/accomplishments/certificate/8W5KN27E8HTD"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>Cybersecurity</a
+					>
+					certificate from University of Maryland
+				</li>
+				<li>
+					Wrote some
+					<a
+						href="https://github.com/mvoloskov/cybersecurity"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						essays on cybersecurity</a
+					>
+				</li>
+				<li data-category="talks">
+					Joined
+					<a
+						href="https://www.freecodecamp.org/"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						FreeCodeCamp community</a
+					>
+				</li>
+				<li data-category="talks">
+					Was invited to talk at
+					<a
+						href="https://ritfest.ru"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>RIT conference</a
+					>
+					at Skolkovo, Moscow. Denied that because of my graduation
+				</li>
+				<li>
+					Created
+					<a
+						href="https://github.com/mvoloskov/dolphin"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						Dolphin</a
+					>
+					and graduated with A mark. Learned a lot about persistency,
+					fundamental paradigms incompatibility and performance on the web,
+					data models and data binding
+				</li>
+				<li data-category="projects">
+					Tried to create
+					<a
+						href="https://github.com/kardinalframework"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						Kardinal</a
+					>
+					(now dead), faced another fundamental incompatibilities. Learned
+					a lot about paradigms
+				</li>
+				<li data-category="talks">
+					<a
+						href="https://github.com/dwyl"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>DWYL</a
+					>
+					invites me to join. Accepted them
+				</li>
+				<li data-category="talks">
+					<a
+						href="https://netology.ru/"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						Netology</a
+					>
+					offers me an expert position. Denied them
+				</li>
+				<li data-category="talks">
+					Talked at
+					<a
+						href="https://pitercss.com/"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						PiterCSS</a
+					>
+				</li>
+				<li>
+					Passed
+					<a
+						href="https://sitthetest.com"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>Sit the Test</a
+					>
+				</li>
+				<li>
+					Veniamin Vekk
+					<a
+						href="http://veqqa.ru/blog/all/obnovil-logotip-na-sayte-i-zagolovok-bloga/"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>mentioned me</a
+					>
+					at his design block
+				</li>
+				<li data-category="projects talks">
+					Created large
+					<a
+						href="https://github.com/mvoloskov/baumeister-manual"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						Baumeister manual</a
+					>, Russian
+				</li>
+				<li>
+					Learned a lot from
+					<a
+						href="https://www.destroyallsoftware.com/screencasts"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>DESTROY&shy;ALL&shy;SOFTWARE</a
+					>. Love it
+				</li>
+				<li>Scored the highest possible result (C2) in IELTS test</li>
+				<li data-category="projects">
+					Left Under Construction, hired by Bizon Insurance Group
+				</li>
+				<li>Learned Clojure and ClojureScript</li>
+				<li>Learned CouchDB, PouchDB, Docker and Ansible</li>
+				<li class="milestone">
+					Able to implement almost any web product 👽
+				</li>
+				<li data-category="talks">
+					Created a
+					<a
+						href="https://hub.docker.com/r/bizongroup/alpine-curl-bash"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						dockerfile</a
+					>
+					that got 100k+ pulls
+				</li>
+				<li data-category="talks">
+					Left Bizon Insurance Group. Learned a lot. The most valuable
+					experience of my carreer
+				</li>
+				<li>
+					Got myself a shiny new MacBook 12", my first Apple computer ever
+				</li>
+				<li data-category="projects">
+					Created
+					<a
+						href="https://github.com/mvoloskov/seoblock"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						SeoBlock</a
+					>
+					from the idea of
+					<a
+						href="https://www.facebook.com/serge.soloview"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						Serge Soloview</a
+					>. My first browser extension ever
+				</li>
+				<li>
+					Got familiar with
+					<a
+						href="https://strapi.io"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						Strapi</a
+					>, absolutely awesome tool
+				</li>
+				<li>
+					Met
+					<a
+						href="https://martyn.guru"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						Martyn</a
+					>
+				</li>
+				<li data-category="talks">
+					<a href="gridtalk">Talked</a>
+					at
+					<a
+						href="https://pitercss.com/"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						PiterCSS</a
+					>
+					(eight-pixel grid)
+				</li>
+				<li>
+					Met
+					<a
+						href="https://twitter.com/hellodeadline"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						Sveta</a
+					>
+				</li>
+				<li>
+					Got
+					<a
+						href="https://www.linkedin.com/in/mvoloskov/"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						LinkedIn profile</a
+					>
+				</li>
+				<li data-category="projects personal talks">
+					Started a
+					<a
+						href="https://dev.to/mvoloskov"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						dev.to profile</a
+					>
+					and got my first 250 followers in no time
+				</li>
+				<li data-category="projects personal">
+					Wrote an article about
+					<a
+						href="https://dev.to/mvoloskov/pwa-and-website-responsiveness-are-not-the-same-44pc"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						PWA Responsiveness</a
+					>
+				</li>
+				<li data-category="projects personal">
+					Created a
+					<a
+						href="https://dev.to/mvoloskov/switching-class-names-like-a-boss-with-deciders-2pie"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						Decider pattern</a
+					>
+					and
+					<a
+						href="https://github.com/mvoloskov/decider"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						library</a
+					>. The biggest GitHub stars I ever got
+				</li>
+				<li data-category="projects personal">
+					Launched
+					<a
+						href="https://rhittm.github.io"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						Rhittm</a
+					>
+					— an app that suggests you Instagram hashtags and the best time
+					to post. I spent only one day creating it and it blasted up to
+					128 users in just the day after, even without an official
+					ProductHunt release
+				</li>
+				<li data-category="projects personal">
+					Wrote a
+					<a
+						href="https://dev.to/mvoloskov/pwa-checklist-2019-25j4"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						PWA Checklist</a
+					>
+					article. Two thousand views in two days
+				</li>
+				<li data-category="projects personal">
+					My
+					<a
+						href="https://dev.to/mvoloskov/scalable-architecture-without-magic-and-how-to-build-it-if-youre-not-google-336a"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						article on scalable architecture</a
+					>
+					blasted off like Falcon Heavy and I made it to the
+					<a
+						href="https://dev.to"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						dev.to</a
+					>
+					main page. Amazing experience. Got 500 followers
+				</li>
+				<li data-category="projects personal talks">
+					Got 1500 followers on dev.to
+				</li>
+				<li data-category="projects personal">
+					Wrote
+					<a
+						href="https://dev.to/mvoloskov/verdana--the-typeface-that-changed-everything-3803"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						a love letter to Verdana</a
+					>
+				</li>
+				<li class="personal projects">
+					Created
+					<a
+						href="https://www.producthunt.com/posts/the-code-of-conduct-generator"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>The Code of Conduct generator</a
+					>. Got the Product of the Day award with basically a six lines of
+					javascript
+				</li>
+				<li class="personal projects talks">
+					Passed 2000 followers on dev.to
+				</li>
+				<li class="personal projects">
+					The beta version of
+					<a
+						href="https://noo.js.org/"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>Noo</a
+					>, my password manager, is live
+				</li>
+				<li class="personal projects">
+					Talked at
+					<a
+						href="https://www.webdevsummit.info/"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>WebDevSummit</a
+					>, everyone was amazed, got some testimonials
+				</li>
+				<li class="personal projects">
+					Joined Ostrovok as a teamlead, moved to Moscow
+				</li>
+				<li class="personal">Started to cure depression</li>
+				<li class="personal projects">
+					Left Ostrovok, moved back to Saint-Petersburg
+				</li>
+				<li class="personal projects">
+					Released
+					<a
+						href="https://producthunt.com/posts/sleeep"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>sleeep</a
+					>
+				</li>
+				<li class="personal projects">Joined Openland</li>
+				<li class="personal projects">
+					<a
+						href="https://producthunt.com/posts/sleeep"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>Sleeep</a
+					>
+					is nominated for the Golden Kitty award
+				</li>
+				<li class="personal projects">Left Openland for Studybay</li>
+				<li class="personal projects">
+					Created
+					<a
+						href="https://github.com/mvoloskov/aniro"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>Aniro</a
+					>
+				</li>
+				<li class="personal projects">
+					Created
+					<a
+						href="https://github.com/mvoloskov/normilio"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>Normilio</a
+					>
+				</li>
+				<li class="personal projects">
+					Created
+					<a
+						href="https://github.com/mvoloskov/modulus"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>Modulus</a
+					>
+				</li>
+				<li class="personal projects">
+					Created
+					<a
+						href="https://github.com/mvoloskov/formie"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>Formie</a
+					>
+				</li>
+				<li class="personal projects">
+					Created
+					<a
+						href="https://pwagym.com"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>PWAGYM</a
+					>
+					and
+					<a
+						href="https://github.com/mvoloskov/pwacss"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>pwacss</a
+					>
+				</li>
+				<li class="personal projects">
+					Introduced
+					<a
+						href="https://dev.to/mvoloskov/introduction-to-pragmatic-beauty-ei4"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>Pragmatic Beauty</a
+					>
+				</li>
+				<li class="personal projects">
+					Created
+					<a
+						href="https://github.com/mvoloskov/extensio"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>Extensio</a
+					>
+				</li>
+				<li class="personal projects">
+					Launched
+					<a
+						href="newsletter"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>my own newsletter</a
+					>
+				</li>
+				<li class="personal projects">
+					Created a
+					<a
+						href="https://t.me/addstickers/AntonZiga"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>Telegram stickerpack</a
+					>
+				</li>
+				<li class="personal">Switched to Firefox and DuckDuckGo</li>
+				<li class="personal projects">
+					Created
+					<a
+						href="https://github.com/mvoloskov/cosmopolite"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>Cosmopolite</a
+					>
+				</li>
+				<li class="personal projects">
+					Created
+					<a
+						href="https://github.com/mvoloskov/regulatio"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						>Regulatio</a
+					>
+				</li>
+				<li class="meta today">
+					<span id="time" class="time"></span>
+					<span class="time">We are here</span>
+				</li>
+				<li class="meta">
+					<em>Want your product to be here?</em>
+					Let me know:
+					<a href="mailto:hello@miloslav.website"
+						>hello@miloslav.website</a
+					>
+				</li>
+			</ul>
+		</main>
+		<footer>
+			<h2 class="ih">Links</h2>
+			<ul class="pillbox">
+				<li>
+					<a
+						href="mailto:hello@miloslav.website"
+						title="Email: hello@miloslav.website"
+					>
+						<svg
+							height="30"
+							width="30"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 100 100"
+						>
+							<title>Email</title>
+							<path
+								d="M50 0C22.386 0 0 22.386 0 50s22.386 50 50 50 50-22.386 50-50S77.614 0 50 0zm18.871 59.068c-2.809 2.808-6.479 4.428-10.098 4.428-2.105 0-3.832-.811-4.644-2.105-.271-.433-.323-.701-.485-1.675-2.052 2.376-4.21 3.402-7.233 3.402-5.345 0-8.747-3.996-8.747-10.151 0-9.124 5.994-16.683 13.174-16.683 3.021 0 4.535.756 5.994 3.024l.54-1.891h6.368c-.321 1.081-1.297 4.374-1.565 5.562l-3.239 11.986a6.09 6.09 0 0 0-.217 1.619c0 .864.485 1.35 1.404 1.35 1.025 0 2.32-.539 3.4-1.403 2.646-2.052 4.373-6.046 4.373-10.201 0-4.967-2.32-9.286-6.209-11.716-2.43-1.457-5.83-2.268-9.664-2.268-11.393 0-19.384 7.559-19.384 18.249 0 10.367 7.18 17.17 18.032 17.17 2.808 0 5.776-.433 8.263-1.186 2.105-.65 3.457-1.297 6.047-2.862l3.293 4.751c-2.916 1.729-4.213 2.376-6.75 3.133a38.955 38.955 0 0 1-11.444 1.726c-7.613 0-13.552-2.158-17.817-6.427C28.213 62.904 26 57.18 26 50.918c0-6.695 2.268-12.473 6.587-16.846 4.967-4.967 11.501-7.396 19.869-7.396C65.036 26.676 74 34.773 74 46.058c0 5.075-1.836 9.719-5.129 13.01z"
+								fill="currentColor"
+							/>
+							<path
+								d="M51.646 41.413c-2.052 0-3.94 1.351-5.292 3.888-1.295 2.429-2.159 5.615-2.159 8.1 0 2.86 1.081 4.371 3.131 4.371 1.999 0 3.889-1.565 5.293-4.319 1.295-2.537 2.158-5.828 2.158-8.313 0-2.215-1.241-3.727-3.131-3.727z"
+								fill="currentColor"
+							/>
+						</svg>
+						<span class="ih"> Email: hello@miloslav.website </span>
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://docs.google.com/document/d/1misybBtgL7z_nema83AE6C6IFxZ5_qaJHG3ihosWfJY/edit?usp=sharing"
+						title="CV"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						<title>CV</title>
+						<svg
+							height="30"
+							width="30"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 100 100"
+						>
+							<path
+								d="M17 4c-1.859 0-2.962 1.587-3 3v86c0 1.57 1.43 3 3 3h52c.79-.01 1.573-.34 2.125-.906l14-14c.548-.55.869-1.318.875-2.094V7c0-1.57-1.43-3-3-3zm3 6h60v66H69c-1.683 0-3.022 1.533-3 3v11H20zm30 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12zm0 14c-6 0-13 2-13 10h26c0-8-7-10-13-10zM29 44a3 3 0 0 0 0 6h42a3 3 0 1 0 0-6zm0 12a3 3 0 0 0 0 6h42a3 3 0 1 0 0-6zm0 12a3 3 0 0 0 0 6h42a3 3 0 0 0 0-6zm43 14h3.75L72 85.75z"
+								fill="currentColor"
+							/>
+						</svg>
+						<span class="ih"> CV </span>
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://github.com/mvoloskov"
+						title="GitHub: @mvoloskov"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						<title>GitHub: @mvoloskov</title>
+						<svg
+							height="30"
+							width="30"
+							viewBox="0 0 1024 1024"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M512 0C229.25 0 0 229.25 0 512c0 226.25 146.688 418.125 350.156 485.812 25.594 4.688 34.938-11.125 34.938-24.625 0-12.188-.469-52.562-.719-95.312C242 908.812 211.906 817.5 211.906 817.5c-23.312-59.125-56.844-74.875-56.844-74.875-46.531-31.75 3.53-31.125 3.53-31.125 51.406 3.562 78.47 52.75 78.47 52.75 45.688 78.25 119.875 55.625 149 42.5 4.654-33 17.904-55.625 32.5-68.375-113.656-12.937-233.218-56.875-233.218-253.063 0-55.938 19.969-101.562 52.656-137.406-5.219-13-22.844-65.094 5.062-135.562 0 0 42.938-13.75 140.812 52.5 40.812-11.406 84.594-17.031 128.125-17.219 43.5.188 87.312 5.875 128.188 17.281 97.688-66.312 140.688-52.5 140.688-52.5 28 70.531 10.375 122.562 5.125 135.5 32.812 35.844 52.625 81.469 52.625 137.406 0 196.688-119.75 240-233.812 252.688 18.438 15.875 34.75 47 34.75 94.75 0 68.438-.688 123.625-.688 140.5 0 13.625 9.312 29.562 35.25 24.562C877.438 930 1024 738.125 1024 512 1024 229.25 794.75 0 512 0z"
+								fill="currentColor"
+							/>
+						</svg>
+						<span class="ih"> GitHub </span>
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://vk.com/mvoloskov"
+						title="VK: @mvoloskov"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="30"
+							height="30"
+							viewBox="0 0 548.358 548.358"
+						>
+							<title>VK: @mvoloskov</title>
+							<path
+								d="M545.451 400.298c-.664-1.431-1.283-2.618-1.858-3.569-9.514-17.135-27.695-38.167-54.532-63.102l-.567-.571-.284-.28-.287-.287h-.288c-12.18-11.611-19.893-19.418-23.123-23.415-5.91-7.614-7.234-15.321-4.004-23.13 2.282-5.9 10.854-18.36 25.696-37.397 7.807-10.089 13.99-18.175 18.556-24.267 32.931-43.78 47.208-71.756 42.828-83.939l-1.701-2.847c-1.143-1.714-4.093-3.282-8.846-4.712-4.764-1.427-10.853-1.663-18.278-.712l-82.224.568c-1.332-.472-3.234-.428-5.712.144l-3.713.859-1.431.715-1.136.859c-.952.568-1.999 1.567-3.142 2.995-1.137 1.423-2.088 3.093-2.848 4.996-8.952 23.031-19.13 44.444-30.553 64.238-7.043 11.803-13.511 22.032-19.418 30.693-5.899 8.658-10.848 15.037-14.842 19.126-4 4.093-7.61 7.372-10.852 9.849-3.237 2.478-5.708 3.525-7.419 3.142-1.715-.383-3.33-.763-4.859-1.143-2.663-1.714-4.805-4.045-6.42-6.995-1.622-2.95-2.714-6.663-3.285-11.136-.568-4.476-.904-8.326-1-11.563-.089-3.233-.048-7.806.145-13.706.198-5.903.287-9.897.287-11.991 0-7.234.141-15.085.424-23.555.288-8.47.521-15.181.716-20.125.194-4.949.284-10.185.284-15.705s-.336-9.849-1-12.991a44.442 44.442 0 0 0-2.99-9.137c-1.335-2.95-3.289-5.232-5.853-6.852-2.569-1.618-5.763-2.902-9.564-3.856-10.089-2.283-22.936-3.518-38.547-3.71-35.401-.38-58.148 1.906-68.236 6.855-3.997 2.091-7.614 4.948-10.848 8.562-3.427 4.189-3.905 6.475-1.431 6.851 11.422 1.711 19.508 5.804 24.267 12.275l1.715 3.429c1.334 2.474 2.666 6.854 3.999 13.134 1.331 6.28 2.19 13.227 2.568 20.837.95 13.897.95 25.793 0 35.689-.953 9.9-1.853 17.607-2.712 23.127-.859 5.52-2.143 9.993-3.855 13.418-1.715 3.426-2.856 5.52-3.428 6.28-.571.76-1.047 1.239-1.425 1.427a21.387 21.387 0 0 1-7.71 1.431c-2.667 0-5.901-1.334-9.707-4-3.805-2.666-7.754-6.328-11.847-10.992-4.093-4.665-8.709-11.184-13.85-19.558-5.137-8.374-10.467-18.271-15.987-29.691l-4.567-8.282c-2.855-5.328-6.755-13.086-11.704-23.267-4.952-10.185-9.329-20.037-13.134-29.554-1.521-3.997-3.806-7.04-6.851-9.134l-1.429-.859c-.95-.76-2.475-1.567-4.567-2.427a30.301 30.301 0 0 0-6.567-1.854l-78.229.568c-7.994 0-13.418 1.811-16.274 5.428l-1.143 1.711c-.571.953-.859 2.475-.859 4.57 0 2.094.571 4.664 1.714 7.707 11.42 26.84 23.839 52.725 37.257 77.659 13.418 24.934 25.078 45.019 34.973 60.237 9.897 15.229 19.985 29.602 30.264 43.112 10.279 13.515 17.083 22.176 20.412 25.981 3.333 3.812 5.951 6.662 7.854 8.565l7.139 6.851c4.568 4.569 11.276 10.041 20.127 16.416 8.853 6.379 18.654 12.659 29.408 18.85 10.756 6.181 23.269 11.225 37.546 15.126 14.275 3.905 28.169 5.472 41.684 4.716h32.834c6.659-.575 11.704-2.669 15.133-6.283l1.136-1.431c.764-1.136 1.479-2.901 2.139-5.276.668-2.379 1-5 1-7.851-.195-8.183.428-15.558 1.852-22.124 1.423-6.564 3.045-11.513 4.859-14.846 1.813-3.33 3.859-6.14 6.136-8.418 2.282-2.283 3.908-3.666 4.862-4.142.948-.479 1.705-.804 2.276-.999 4.568-1.522 9.944-.048 16.136 4.429 6.187 4.473 11.99 9.996 17.418 16.56 5.425 6.57 11.943 13.941 19.555 22.124 7.617 8.186 14.277 14.271 19.985 18.274l5.708 3.426c3.812 2.286 8.761 4.38 14.853 6.283 6.081 1.902 11.409 2.378 15.984 1.427l73.087-1.14c7.229 0 12.854-1.197 16.844-3.572 3.998-2.379 6.373-5 7.139-7.851.764-2.854.805-6.092.145-9.712-.677-3.611-1.344-6.136-2.008-7.563z"
+								fill="currentColor"
+							/>
+						</svg>
+						<span class="ih"> VK </span>
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://t.me/mvoloskov"
+						target="_blank"
+						rel="nofollow noopener noreferrer"
+						title="Telegram: @mvoloskov"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="30"
+							height="30"
+							viewBox="0 0 30 30"
+						>
+							<title>Telegram: @mvoloskov</title>
+							<g transform="matrix(1,0,0,1,-1739.38,-1225.6)">
+								<path
+									d="M1768.5,1240.16C1768.5,1248.2 1761.98,1254.72 1753.94,1254.72C1745.9,1254.72 1739.38,1248.2 1739.38,1240.16C1739.38,1232.12 1745.9,1225.6 1753.94,1225.6C1761.98,1225.6 1768.5,1232.12 1768.5,1240.16L1768.5,1240.16ZM1757.15,1243.48C1757.6,1242.26 1759.24,1237.6 1759.5,1236.38C1759.8,1235 1759.18,1234.87 1757.76,1235.33C1756.34,1235.79 1752.71,1237.14 1752.1,1237.36C1751.48,1237.58 1748.5,1238.58 1747.89,1238.88C1746.62,1239.55 1747.24,1240.58 1748.65,1241.12C1752.86,1243.14 1751.67,1242.11 1753.55,1245.86C1753.94,1246.81 1754.85,1248.44 1755.72,1247.21C1756.18,1246.51 1756.8,1244.45 1757.15,1243.48Z"
+									fill="currentColor"
+								/>
+							</g>
+						</svg>
+						<span class="ih"> Telegram </span>
+					</a>
+				</li>
+			</ul>
+		</footer>
+		<script src="assets/time.js"></script>
+	</body>
 </html>
