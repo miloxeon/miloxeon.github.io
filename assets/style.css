@@ -60,9 +60,19 @@ html {
 	font-size: large;
 }
 
+svg {
+	display: block;
+}
+
 a {
 	color: var(--a--link-color);
 	transition: color 300ms cubic-bezier(0.22, 0.61, 0.41, 1.08);
+}
+
+a[href^='http']::after {
+	display: inline;
+	content: '↗';
+	speak: none;
 }
 
 a:focus {
@@ -149,6 +159,7 @@ footer {
 
 .pillbox {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	list-style-type: none;
 	padding: 0;
@@ -159,10 +170,22 @@ footer {
 }
 
 .pillbox a {
+	display: inline-block;
+	position: relative;
 	text-decoration: none;
 	color: var(--root-color);
 	transition: filter 300ms cubic-bezier(0.22, 0.61, 0.41, 1.08);
-	display: flex;
+}
+
+.pillbox a[href^='http']::after {
+	display: inline-block;
+	content: '↗';
+	position: absolute;
+	top: 0;
+	right: 0;
+	line-height: 1;
+	transform: translate(100%, -50%);
+	speak: none;
 }
 
 .pillbox a:focus,
