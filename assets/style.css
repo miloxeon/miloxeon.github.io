@@ -6,8 +6,6 @@
 	--a--focus-color: rgb(48, 0, 193);
 	--a--active-color: rgb(48, 0, 193);
 	--a--visited-color: rgb(83, 26, 137);
-	--selection-background-color: rgb(0, 0, 0);
-	--selection-color: rgb(255, 255, 255);
 	--standout-background-color: rgb(0, 0, 0);
 	--standout-color: rgb(255, 255, 255);
 	--standout-a--link-color: rgb(255, 255, 255);
@@ -26,21 +24,25 @@
 		--a--focus-color: rgb(127, 219, 255);
 		--a--active-color: rgb(127, 219, 255);
 		--a--visited-color: rgb(255, 255, 255);
-		--selection-background-color: rgb(255, 255, 255);
-		--selection-color: rgb(0, 0, 0);
 	}
 }
+
+::selection {
+	color: var(--root-background-color);
+	background-color: var(--root-color);
+}
+
+.standout ::selection {
+	color: var(--standout-background-color);
+	background-color: var(--standout-color);
+}
+
 html {
 	background-color: var(--root-background-color);
 	color: var(--root-color);
 	font-family: 'Work Sans', sans-serif;
 	line-height: 1.5;
 	font-size: large;
-}
-
-::selection {
-	color: var(--selection-color);
-	background-color: var(--selection-background-color);
 }
 
 a {
@@ -84,7 +86,7 @@ footer a:active {
 
 body {
 	margin: 3rem auto;
-	max-width: 38rem;
+	max-width: 42rem;
 	padding: 0 2rem;
 }
 
@@ -118,6 +120,7 @@ body {
 p + p {
 	margin-top: 2rem;
 }
+
 .bio {
 	list-style-type: square;
 	padding: 0;
