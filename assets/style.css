@@ -30,6 +30,7 @@
 	box-sizing: border-box;
 }
 
+/* inclusively hidden */
 .ih {
 	clip: rect(0 0 0 0);
 	clip-path: inset(100%);
@@ -38,6 +39,12 @@
 	position: absolute;
 	white-space: nowrap;
 	width: 1px;
+}
+
+/* visual-only */
+.v {
+	speak: none;
+	user-select: none;
 }
 
 ::selection {
@@ -73,6 +80,7 @@ a[href^='http']::after {
 	display: inline;
 	content: '↗';
 	speak: none;
+	user-select: none;
 }
 
 a:focus {
@@ -122,9 +130,18 @@ p + p {
 	margin-top: 2rem;
 }
 
+ul {
+	padding: 0;
+	list-style-type: none;
+	list-style-type: '—';
+}
+
+li + li {
+	margin-top: 1rem;
+}
+
 .bio {
 	list-style-type: square;
-	padding: 0;
 	margin-top: 2rem;
 	font-size: small;
 }
@@ -179,13 +196,11 @@ footer {
 
 .pillbox a[href^='http']::after {
 	display: inline-block;
-	content: '↗';
 	position: absolute;
 	top: 0;
 	right: 0;
 	line-height: 1;
 	transform: translate(100%, -50%);
-	speak: none;
 }
 
 .pillbox a:focus,
