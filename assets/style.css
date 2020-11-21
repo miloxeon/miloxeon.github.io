@@ -15,7 +15,7 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--root-background-color: rgb(41, 41, 41);
+		--root-background-color: rgb(48, 48, 48);
 		--root-color: rgb(255, 255, 255);
 		--a--link-color: rgb(255, 255, 255);
 		--a--hover-color: rgb(127, 219, 255);
