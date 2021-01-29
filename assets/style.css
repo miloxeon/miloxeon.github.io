@@ -43,7 +43,6 @@
 
 /* visual-only */
 .v {
-	speak: none;
 	user-select: none;
 }
 
@@ -79,7 +78,6 @@ a {
 a[href^='http']::after {
 	display: inline;
 	content: '↗';
-	speak: none;
 	user-select: none;
 }
 
