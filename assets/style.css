@@ -162,11 +162,6 @@ li + li {
 	font-family: monospace;
 }
 
-.time:not(:empty) + .time::before {
-	display: inline;
-	content: ' — ';
-}
-
 footer {
 	margin: -1rem;
 	margin-top: 40px;
