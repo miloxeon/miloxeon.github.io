@@ -14,7 +14,7 @@ class LiveTimer extends HTMLElement {
             }
         </style>
 
-        <output role="timer" aria-atomic="false" aria-live="off"></output>
+        <output role="timer" aria-atomic="true" aria-live="off"></output>
         <span>We are here</span>
     `
 
