@@ -1,0 +1,10 @@
+<svg role="img" aria-hidden="true" width="200" height="200" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	<clipPath id="uyouthe">
+		<path
+			d="M0 12C0 5.372 5.372 0 12 0s12 5.372 12 12-5.372 12-12 12S0 18.628 0 12Zm12 7.176a7.176 7.176 0 1 0 0-14.353 7.176 7.176 0 0 0 0 14.353Z" />
+	</clipPath>
+	<foreignObject width="24" height="24" x="0" y="0" clip-path="url(#uyouthe)">
+		<div xmlns="http://www.w3.org/1999/xhtml"
+			style="width:100%;height:100%;border-radius:50%;background-image:conic-gradient(from 45deg,#fc3e81,#f9b200,#9be058,#43a3f9,#4a5be5,#fc3e81)" />
+	</foreignObject>
+</svg>
